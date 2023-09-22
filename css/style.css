@@ -122,6 +122,10 @@ span.little {
 
 }
 
+.cosmic p {
+  min-height: 191px;
+}
+
 .conclusion {
   padding-top: 300px;
   padding-bottom: 300px;
