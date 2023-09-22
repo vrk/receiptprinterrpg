@@ -119,11 +119,11 @@ span.little {
   background: #FFFFFF;
   background: radial-gradient(ellipse farthest-side at center center, #FFFFFF 73%, #E8E8E8 86%, #FFFFFF 100%);
   text-align: center;
-
-}
-
-.cosmic p {
-  min-height: 191px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .conclusion {
