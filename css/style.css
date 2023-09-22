@@ -124,7 +124,7 @@ span.little {
 
 .conclusion {
   padding-top: 300px;
-  padding-bottom: 100px;
+  padding-bottom: 300px;
   /* border-style: ridge;
   border: 4px ridge gainsboro; */
   background: linear-gradient(180deg,  rgba(255,255,255,1) 0%, #202124 20%, #202124 100%);
