@@ -1,12 +1,32 @@
-html {
+body {
   background-color: white;
   color: #202124;
-  font-family: "Noto Serif KR", serif;
-  font-size: 18px;
+  font-family: "Courier Prime", monospace;
+  font-size: 24px;
   line-height: 1.6;
-  margin: 2em;
-  max-width: 700px;
+  margin: 0;
+  padding: 0;
   text-underline-position: under;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 32px;
+}
+
+img, p, blockquote {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  padding: 0 2em;
 }
 
 a {
@@ -35,4 +55,121 @@ hr {
 
 ul {
   list-style-type: square;
+}
+
+
+.selfie {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+img {
+  max-width: 500px;
+}
+
+.intro {
+  color: white;
+  background-color: #202124;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.reveal {
+  background: #202124;
+  background: linear-gradient(180deg, #202124 0%, #202124 0%, rgba(255,255,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span.little {
+  font-size: 14px;
+}
+
+.feared {
+  margin-bottom: 200px;
+}
+
+.feared strong {
+  font-size: 150%;
+}
+
+.narration {
+  font-size: 14px;
+  margin: 4em 0;
+}
+
+.narration p {
+  margin: 3em auto;
+}
+
+.more-space {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.fantasy {
+  background: linear-gradient(180deg, #ffffff 0%, #d5e0ff 20%, #e7edff 80%, rgba(255,255,255,1) 100%);
+}
+
+.cosmic {
+
+  /* https://www.cssportal.com/css-gradient-generator/ */
+  background: #FFFFFF;
+  background: radial-gradient(ellipse farthest-side at center center, #FFFFFF 73%, #E8E8E8 86%, #FFFFFF 100%);
+  text-align: center;
+
+}
+
+.conclusion {
+  padding-top: 300px;
+  padding-bottom: 100px;
+  /* border-style: ridge;
+  border: 4px ridge gainsboro; */
+  background: linear-gradient(180deg,  rgba(255,255,255,1) 0%, #202124 20%, #202124 100%);
+  color: white;
+}
+
+.conclusion h3 {
+  margin: 0;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.conclusion .box {
+  padding: 1em;
+  max-width: 500px;
+}
+
+.conclusion p {
+  margin: 1em auto;
+  padding: 0;
+  font-size: 35px;
+}
+
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 50px;
+}
+
+.fornow {
+  font-size: 16px;
+  padding-bottom: 100px;
+}
+
+.choices > button {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  flex: 1;
+  height: 75px;
+  line-height: 1.5;
 }
