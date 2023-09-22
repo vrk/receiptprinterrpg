@@ -25,8 +25,8 @@ title: receipt printer rpg | pg 1
 
 <div class="narration">
 
-<p>How this happened, you have no idea<br>Why this happened... <br><br>...you have a guess 
-<p>A few moments ago you had been coloring in a zine. You were coloring a picture of a QR code, and as you colored you had this thought:
+<p>How this happened, <br>you have no clue<br><br>Why this happened... <br>you have a guess 
+<p>A few moments ago you had been coloring in a zine. <br><br>You were coloring a picture of a QR code, and as you colored you had this thought:
 
 </div>
 
@@ -40,7 +40,7 @@ It’s like <em>I’m</em> a receipt printer now! <span class="little">I'm a hum
 </div>
 
 <div class="fantasy">
-<p>Wow, life as a printer… it’s not so bad. 
+<p>Wow, life as a printer...<br> it’s not so bad. 
 <p>I like coloring… <br>Relaxing… 
 <p>what if I was reborn a printer haha.... 
 <p>I would grant people's wishes all day... <span class="little">as long as their wish was a printout</span>
@@ -68,7 +68,7 @@ It’s like <em>I’m</em> a receipt printer now! <span class="little">I'm a hum
 </div>
 
 <div class="conclusion">
-
+<div class="box">
 <p><span>YOU ARE A RECEIPT PRINTER</span>
 <p><span>DO YOU ACCEPT THIS FATE?</span>
 <p class="choices">
@@ -77,4 +77,5 @@ It’s like <em>I’m</em> a receipt printer now! <span class="little">I'm a hum
 </p>
 
 
+</div>
 </div>
