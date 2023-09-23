@@ -188,6 +188,7 @@ span.little {
 }
 
 .button-4 {
+  user-select: none;
   height: 75px;
   line-height: 1.5;
   appearance: none;
