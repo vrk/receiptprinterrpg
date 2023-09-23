@@ -72,8 +72,12 @@ It’s like <em>I’m</em> a receipt printer now! <span class="little">I'm a hum
 <p><span>YOU ARE A RECEIPT PRINTER</span>
 <p><span>DO YOU ACCEPT THIS FATE?</span>
 <p class="choices">
-<button id="yes">yes<br>I am PRINTER</button>
-<button id="no">NO! I AM NOT PRINTER</button>
+<a href="/yes" class="button-4">
+ yes<br>I am PRINTER
+</a>
+<a href="/notthis" class="button-4">
+ NO! I AM<br>NOT PRINTER
+</a>
 </p>
 
 
