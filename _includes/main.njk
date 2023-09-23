@@ -1,17 +1,20 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html>
-  <head>
+  <head profile="http://gmpg.org/xfn/11">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{{ title }}</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/donut.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
-  </head>
 
-  <body>
-    <main>
-    {{ content | safe }}
-    </main>
-  </body>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ stylesheet | safe }}" type="text/css" media="screen" />
+    <script src="{{ script | safe }}" defer></script>
+  </head>
+    <body>
+        <main>
+          {{ content | safe }}
+        </main>
+    </body>
 </html>

@@ -1,0 +1,131 @@
+main {
+  width: 500px;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 100%;
+  }
+}
+
+.diagonal-box {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagonal-box::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fcfc3d;
+  transform: skewY(-7deg);
+}
+
+.content {
+  margin: 0 auto;
+  position: relative;
+  font-size: 180px;
+  transform: rotate(-7deg);
+  font-style: italic;
+}
+
+.content .like {
+  font-size: 16px;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  transform: rotate(7deg);
+  font-style: normal;
+}
+
+.notthis {
+  padding-top: 50px;
+}
+
+.notthis p {
+  padding: 0 32px;
+  margin: 32px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.frantic-search {
+  padding-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.frantic-search p {
+  width: 450px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.search-qs span {
+  position: relative;
+  height: 140px;
+  font-size: 48px;
+  display: block;;
+  width: 50px;
+}
+
+.search-qs span.exclaim {
+  padding-top: 600px;
+  padding-bottom: 300px;
+  width: 100%;
+  text-align: center;;
+}
+
+.side {
+  background-color: #f8c1ca;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/**
+https://codesandbox.io/s/simple-css-3d-buttons-5c9rg?file=/index.css:0-980
+**/
+
+.btn {
+  cursor: pointer;
+  background-color: #f8c1ca;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 2px solid #ff9bac;
+  border-radius: 60px;
+  position: relative;
+  top: -50px;
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 50px #ff9bac;
+  height: 150px;
+  width: 300px;
+}
+
+.btn:hover {
+  top: -45px;
+  box-shadow: 0 45px #ff9bac;
+}
+
+.btn:active {
+  top: -10px;
+  box-shadow: 0 10px #ff9bac;
+}
+
+.underneath {
+  height: 250px;
+}
