@@ -2,7 +2,9 @@ let pressed = false;
 const button = document.getElementById("power-btn");
 const fadeToBlack = document.getElementById("fadetoblack");
 
-const onDown = () => {
+const onDown = (e) => {
+  e.preventDefault();
+  button.classList.add("pressed");
   pressed = true;
   fadeToBlack.style.opacity = 1.0;
   setTimeout(() => {
@@ -13,6 +15,7 @@ const onDown = () => {
 
 const onUp = () => {
   pressed = false;
+  button.classList.remove("pressed");
   fadeToBlack.style.opacity = 0;
 }
 

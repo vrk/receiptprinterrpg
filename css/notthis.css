@@ -121,6 +121,7 @@ https://codesandbox.io/s/simple-css-3d-buttons-5c9rg?file=/index.css:0-980
   box-shadow: 0 45px #ff9bac;
 }
 
+.btn.pressed,
 .btn:active {
   top: -10px;
   box-shadow: 0 10px #ff9bac;
