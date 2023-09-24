@@ -2,6 +2,7 @@
 layout: main
 title: receipt printer rpg | pg 2
 stylesheet: /css/notthis.css
+script: /js/notthis.js
 ---
 
 <div class="diagonal-box">
@@ -38,9 +39,11 @@ stylesheet: /css/notthis.css
 </div>
 
 <div class="side">
-<button class="btn"></button>
+<button class="btn" id="power-btn"></button>
 </div>
 
 <div class="underneath">
 <p>it's the power button!!<br>give it a press
 </div>
+
+<div id ="fadetoblack"></div>
