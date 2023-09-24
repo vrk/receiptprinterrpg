@@ -40,6 +40,7 @@ script: /js/notthis.js
 
 <div class="side">
 <button class="btn" id="power-btn"></button>
+<div id ="fadepowertoo"></div>
 </div>
 
 <div class="underneath">
