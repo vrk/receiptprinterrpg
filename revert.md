@@ -44,6 +44,9 @@ script: /js/revert.js
       <em>(nothing will be saved/uploaded)</em>
       <p>if you click “Fake Camera” we’ll just fake it
     </div>
+    <div id="scrolldown">
+      <div id="scrolldownbutton" class="hidden">👇 scroll down 👇</div>
+    </div>
   </div>
 
 </div>
@@ -59,12 +62,15 @@ script: /js/revert.js
   </p>
 
   <p class="choices choices-down">
-  <a href="/yes" class="button-4">
-  yes<br>I am PRINTER
-  </a>
-  <a href="/notthis" class="button-4">
-  NO! I AM<br>NOT PRINTER
-  </a>
+    <a href="/yes" class="button-4">
+      RELIEVED
+    </a>
+    <a href="/notthis" class="button-4">
+      regretful :(
+    </a>
+    <a href="/notthis" class="button-4">
+      am I really a human again??
+    </a>
   </p>
 
 </div>

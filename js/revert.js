@@ -47,5 +47,18 @@ fakeCameraBtn.addEventListener('click', () => {
 
 function continueStory() {
   document.getElementById('storycontinued').hidden = false;
+  document.getElementById('scrolldownbutton').classList.remove("hidden");
+  document.getElementById('scrolldownbutton').classList.add("visible");
+}
 
+
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+  let currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    // document.getElementById("stub").style.top = "0";
+  } else {
+    // document.getElementById("stub").style.top = "150px";
+  }
+  prevScrollpos = currentScrollPos;
 }
