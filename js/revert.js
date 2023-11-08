@@ -16,6 +16,8 @@ realCameraBtn.addEventListener('click', async () => {
   onSelected();
   try {
     const videoElement = document.createElement('video');
+    videoElement.autoplay = true;
+    videoElement.muted = true;
     const divElement = document.getElementById('backgroundcontainer');
     const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } });
     videoElement.srcObject = stream;
