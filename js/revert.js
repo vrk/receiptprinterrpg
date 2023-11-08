@@ -26,6 +26,7 @@ realCameraBtn.addEventListener('click', async () => {
     const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } });
     videoElement.srcObject = stream;
     videoElement.play();
+    document.getElementById('dot').hidden = false;
     divElement.appendChild(videoElement);
     continueStory();
   } catch (e) {
@@ -34,7 +35,10 @@ realCameraBtn.addEventListener('click', async () => {
   }
 });
 
-function showFake() {
+async function showFake() {
+  await delay(500);
+  document.getElementById('dot').hidden = false;
+  await delay(1000);
   const divElement = document.getElementById('backgroundcontainer');
   divElement.classList.add("fake");
   continueStory();
@@ -45,8 +49,9 @@ fakeCameraBtn.addEventListener('click', () => {
   showFake();
 });
 
-function continueStory() {
+async function continueStory() {
   document.getElementById('storycontinued').hidden = false;
+  await delay(1000);
   document.getElementById('scrolldownbutton').classList.remove("hidden");
   document.getElementById('scrolldownbutton').classList.add("visible");
 }
@@ -62,3 +67,13 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+
+async function delay(timeInMs) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log("Delayed for 1 second.");
+      resolve();
+    }, timeInMs);
+  })
+} 

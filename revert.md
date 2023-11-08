@@ -22,6 +22,9 @@ script: /js/revert.js
   </div>
 
   <div id="phonecase">
+    <div id="island">
+      <div id="dot" class="dot" hidden></div>
+    </div>
     <div id="backgroundcontainer">
       <video 
         playsinline 
