@@ -20,7 +20,7 @@ realCameraBtn.addEventListener('click', async () => {
     videoElement.muted = true;
     videoElement.loop = true;
     videoElement.playsinline = true;
-    videoElement.setAttribute('webkit-playsinline', '');
+    videoElement.setAttribute('webkit-playsinline', true);
 
     const divElement = document.getElementById('backgroundcontainer');
     const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } });

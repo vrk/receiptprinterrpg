@@ -47,6 +47,16 @@ script: /js/revert.js
   <p>
     so how do you feel now?
   </p>
+
+  <p class="choices choices-down">
+  <a href="/yes" class="button-4">
+  yes<br>I am PRINTER
+  </a>
+  <a href="/notthis" class="button-4">
+  NO! I AM<br>NOT PRINTER
+  </a>
+  </p>
+
 </div>
 
 </div>
