@@ -15,12 +15,12 @@ const onSelected = () => {
 realCameraBtn.addEventListener('click', async () => {
   onSelected();
   try {
-    const videoElement = document.createElement('video');
-    videoElement.autoplay = true;
-    videoElement.muted = true;
-    videoElement.loop = true;
-    videoElement.playsinline = true;
-    videoElement.setAttribute('webkit-playsinline', true);
+    const videoElement = document.querySelector('video');
+    // videoElement.autoplay = true;
+    // videoElement.muted = true;
+    // videoElement.loop = true;
+    // videoElement.playsinline = true;
+    // videoElement.setAttribute('webkit-playsinline', true);
 
     const divElement = document.getElementById('backgroundcontainer');
     const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } });

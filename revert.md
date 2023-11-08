@@ -22,7 +22,17 @@ script: /js/revert.js
   </div>
 
   <div id="phonecase">
-    <div id="backgroundcontainer"></div>
+    <div id="backgroundcontainer">
+      <video 
+        playsinline 
+        webkit-playsinline
+        autoplay
+        loop 
+        preload
+        muted>
+      </video>
+
+    </div>
     <img src="/images/phone-background.png" id="phoneimg"/>
     <img src="/images/fakecamera.png" id="fakecameraicon">
     <img src="/images/realcamera.png" id="realcameraicon">
