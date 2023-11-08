@@ -16,6 +16,7 @@ body {
 
 main {
   width: 500px;
+  height: 100%;
 }
 
 @media (min-width: 600px) {
@@ -222,4 +223,8 @@ main {
   z-index: 101;
   background-color: #8dff63;
   border-radius: 50%;
+}
+
+.choices-down {
+  padding-bottom: 100px;
 }

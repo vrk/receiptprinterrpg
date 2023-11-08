@@ -65,14 +65,15 @@ script: /js/revert.js
   </p>
 
   <p class="choices choices-down">
-    <a href="/yes" class="button-4">
+    <a href="/relieved" class="button-4">
       RELIEVED
     </a>
-    <a href="/notthis" class="button-4">
+    <a href="/regretful" class="button-4">
       regretful :(
     </a>
-    <a href="/notthis" class="button-4">
-      am I really a human again??
+    <a href="/indisbelief" class="button-4">
+      am I really a human again??<br>
+      I don't believe it
     </a>
   </p>
 
