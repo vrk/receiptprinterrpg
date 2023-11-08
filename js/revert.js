@@ -51,7 +51,7 @@ fakeCameraBtn.addEventListener('click', () => {
 
 async function continueStory() {
   document.getElementById('storycontinued').hidden = false;
-  await delay(1000);
+  await delay(2000);
   document.getElementById('scrolldownbutton').classList.remove("hidden");
   document.getElementById('scrolldownbutton').classList.add("visible");
 }
