@@ -29,9 +29,9 @@ script: /js/revert.js
         autoplay
         loop 
         preload
-        muted>
+        muted
+      >
       </video>
-
     </div>
     <img src="/images/phone-background.png" id="phoneimg"/>
     <img src="/images/fakecamera.png" id="fakecameraicon">
