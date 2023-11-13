@@ -18,7 +18,7 @@ main {
   /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
   background-image: linear-gradient(to top, #f5f7fa 0%, #c3cfe2 100%);
   background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
-  background-image: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 100%);
+  /* background-image: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 100%); */
   background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
   text-align: center;
 }
@@ -44,6 +44,7 @@ main {
   left: 30px;
   width: 300px
 }
+
 
 img {
   width: 100%;
@@ -79,4 +80,58 @@ img {
   margin: 200px auto;
   background-position: center;
 
+}
+
+#soterrible {
+
+  /* https://www.cssportal.com/css-gradient-generator/ */
+  background: #FFFFFF;
+  background: radial-gradient(ellipse farthest-side at center center, #FFFFFF 73%, #E8E8E8 86%, #FFFFFF 100%);
+  text-align: center;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 120%;
+  font-style: italic;
+}
+
+#ohgeez {
+  background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 90%, white 100%);
+  background-color: #505285;
+  color: white;
+  height: 200px;
+}
+
+#regret {
+  padding-top: 300px;
+  background-color: #505285;
+  color: white;
+  font-size: 80%;
+}
+
+#regret p {
+  margin-right: 150px;
+}
+
+#regret p.right {
+  margin-right: auto;
+  margin-left: 150px;
+  text-align: right;
+}
+
+
+#regret p.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 150%;
+}
+
+#ohgeezend {
+  /* background-image: linear-gradient(to bottom, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 90%, white 100%); */
+  background-color: #505285;
+  color: white;
+  height: 200px;
 }

@@ -113,6 +113,10 @@ span.little {
   margin-bottom: 200px;
 }
 
+.more-space-top {
+  margin-top: 200px;
+}
+
 .fantasy {
   background: linear-gradient(180deg, #ffffff 0%, #d5e0ff 20%, #e7edff 80%, rgba(255,255,255,1) 100%);
 }
