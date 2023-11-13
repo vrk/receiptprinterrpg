@@ -1,17 +1,4 @@
-/** TODO: THIS NEEDS TO BE COPIED EVERYWHERE - reduce redundancy **/
 
-main {
-  width: 500px;
-  height: 100%;
-}
-
-@media (min-width: 600px) {
-  main {
-    width: 100%;
-  }
-}
-
-/** end redundancy **/
 
 .thankgoodness {
   background-color: rgb(227, 249, 255);
@@ -74,9 +61,10 @@ img {
   background-color: white;
   background-image: url(/images/lookathands.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 500px;
-  height: 460px;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 473/280;
   margin: 200px auto;
   background-position: center;
 
