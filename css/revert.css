@@ -49,7 +49,8 @@ main {
 
 .bluegradient {
   background-color: #95C1E9;
-  background: linear-gradient(180deg, #95C1E9 0%, #95C1E9 90%, rgba(255,255,255,1) 100%);
+  /* background-image: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 100%); */
+  background: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 90%, rgba(255,255,255,1) 100%);
   width: 100%;
 }
 
