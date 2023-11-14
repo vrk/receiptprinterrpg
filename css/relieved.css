@@ -48,6 +48,8 @@ img {
 
 .boxy {
   border: 2px solid black;
+  border-left: 0;
+  border-right: 0;
   margin: 200px auto;
   max-width: 450px;
   background-color: white;
