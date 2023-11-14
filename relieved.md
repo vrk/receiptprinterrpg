@@ -57,6 +57,9 @@ script: /js/relieved.js
 <div id="ohgeezend"></div>
 
 <div id="shame">
+<p>You hurt your receipt printer.</p>
+<p>Your receipt printer, who did not ask to be born.</p>
+<p>Your receipt printer, who has been nothing but a loyal friend.</p>
 <p>You are ashamed.</p>
 </div>
 
