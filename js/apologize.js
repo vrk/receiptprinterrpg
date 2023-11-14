@@ -36,7 +36,7 @@ printAppBtn.addEventListener('click', () => {
 let buildingString = '';
 let message = "I am sorry, friend. ";
 let index = 0;
-textarea.addEventListener('keydown', (event) => {
+textarea.addEventListener('beforeinput', (event) => {
   event.preventDefault();
   buildingString += message[index];
   textarea.innerHTML = buildingString;
