@@ -42,13 +42,15 @@ img {
   padding-top: 300px;
   text-align: left;
   padding-bottom: 200px;
+  margin-right: 100px;
+  font-size: 60%;;
 }
 
-.box {
-  background-color: white;
+.boxy {
   border: 2px solid black;
   margin: 200px auto;
   max-width: 450px;
+  background-color: white;
 }
 
 #teary {
@@ -70,6 +72,10 @@ img {
 
 }
 
+.whatsthat {
+  font-size: 80%;
+}
+
 #soterrible {
 
   /* https://www.cssportal.com/css-gradient-generator/ */
@@ -83,11 +89,11 @@ img {
   flex-direction: column;
   font-size: 120%;
   font-style: italic;
+  margin-top: 100px;
 }
 
 #ohgeez {
   background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 90%, white 100%);
-  background-color: #505285;
   color: white;
   height: 200px;
 }
@@ -118,8 +124,18 @@ img {
 }
 
 #ohgeezend {
-  /* background-image: linear-gradient(to bottom, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 90%, white 100%); */
-  background-color: #505285;
+  background-image: linear-gradient(to bottom, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 90%, white 100%);
   color: white;
   height: 200px;
+}
+
+#shame {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conclusion {
+  text-align: center;
 }

@@ -11,14 +11,14 @@ script: /js/relieved.js
     <img src="/images/thankgoodness2.png">
   </p>
   <p id="youexclaim">
-   you exclaim
+   you exclaim.
   </p>
 
 
   <p id="nightmare">
-    the nightmare is over<br>
-    you are human again<br><br><br><br><br><br><br><br>
-    you look down at your hands with renewed gratitude for the vessel that is your body
+    The nightmare is over.<br>
+    You are human again.<br><br><br><br><br><br><br><br>
+    You look down at your hands with renewed gratitude for your body.
   </p>
 </div>
 <div id="transition">
@@ -28,22 +28,21 @@ script: /js/relieved.js
   <div id="handsbox">
   </div>
 
-  <p> what's that...?</p>
-  <p> beneath your hands</p>
+  <p class="whatsthat">What's that...?<br><br>Beneath your hands</p>
 
-  <div class="box">
+  <div class="boxy">
     <img src="/images/teary-rp.png">
   </div>
 
-  <p>you see your receipt printer looking up at you</p>
+  <p>You see your receipt printer looking up at you.</p>
 
-  <div class="box">
+  <p>Its eyes seem to be saying,</p>
+
+  <p id="soterrible">"Is it bad to be a receipt printer<br>...?"</p>
+
+  <div class="boxy">
     <img src="/images/teary-rp-2.png">
   </div>
-
-  <p>its eyes seem to be saying,</p>
-
-  <p id="soterrible" class="more-space">"Is it bad to be a receipt printer<br>...?"</p>
 
 </div>
 
@@ -56,3 +55,24 @@ script: /js/relieved.js
   <p class="center more-space-top">The life of a receipt printer is a noble life.</p>
 </div>
 <div id="ohgeezend"></div>
+
+<div id="shame">
+<p>You are ashamed.</p>
+</div>
+
+<div class="conclusion">
+  <div class="box">
+  <p>
+    WHAT NOW, HUMAN?
+  </p>
+
+  <p class="choices choices-down">
+    <a href="/apologize" class="button-4">
+      I'd like to apologize
+    </a>
+    <a href="/flee" class="button-4">
+      I'd like to run away
+    </a>
+  </p>
+  </div>
+</div>

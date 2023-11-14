@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+}
+
+#run {
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=ffffff&c2=010101&gt=r&gd=dcc
+  */
+  background: radial-gradient(at center, #FFFFFF, black, black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+#running-away {
+  margin-top: 150px;
+  /* margin-bottom: 50px; */
+  /* height: 500px; */
+}
+
+.boxer {
+  margin: 0 auto;
+  max-width: 450px;
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.boxy {
+  border: 2px solid black;
+  max-width: 450px;
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  z-index: 100;
+}
+
+.boxy-ending {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  z-index: 100;
+  height: 150px;
+  transition: transform 1.5s linear, opacity 1.5s linear;
+  transform: translateY(100px);
+  opacity: 0;
+  transition-delay: 2s;
+}
+
+.boxy img {
+  width: 100%;
+}
+
+.step-button {
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  transition: transform 1.5s linear, opacity 1.5s linear;
+  opacity: 1;
+}
+
+
+path {
+  fill: #ff0000; /* changes the color to red */
+}
+
+#left-hand-svg {
+  width: 40%;
+  position: relative;
+  left: -25px;
+}
+
+#right-hand-svg {
+  width: 47%;
+  position: relative;
+  right: -100px;
+  top: 50px;
+}
+
+svg {
+  transition: transform 1.5s linear, opacity 1.5s linear;
+}
