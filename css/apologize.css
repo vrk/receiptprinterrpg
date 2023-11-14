@@ -26,16 +26,7 @@
   right: 0;
 }
 
-#realcameraicon {
-  cursor: pointer;
-  position: absolute;
-
-  top: 350px;
-  left: 125px;
-  width: 100px;;
-}
-
-#fakecameraicon {
+#printappicon {
   cursor: pointer;
   position: absolute;
 
@@ -44,8 +35,7 @@
   width: 115px;
 }
 
-#fakecameraicon:hover,
-#realcameraicon:hover {
+#printappicon:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
 }
@@ -82,23 +72,75 @@
   left: 0;
   bottom: 0;
   right: 0;
-}
-
-#backgroundcontainer video {
-  width: 100%; /* Set the width of the video to 100% of the container */
-  height: 100%; /* Set the height of the video to 100% of the container */
-  object-fit: cover; /* This property stretches the video to cover the entire container */
-
-}
-
-#backgroundcontainer.fake {
-  background-image: url(/images/saitama.png);
+  background-image: url(/images/phone-bg-apology-appscreen.png);
   background-size: contain;
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
+  mask: url(/images/phone-bg-apology.png);
+  -webkit-mask: url(/images/phone-bg-apology.png);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  overflow: hidden;
+}
+
+#backgroundcontainer.printer {
+  background-image: 
+    url(/images/phone-bg-apology-transparent-cover.png),
+    url(/images/fun-print-banner.png),
+    url(/images/phone-bg-apology.png);
+}
+
+#background-print-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image:
+    url(/images/phone-bg-apology-transparent-cover.png),
+    url(/images/phone-bg-gray.png);
+  background-size: contain;
+  background-position: 0 0, 470px 0;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  z-index: -10;
+}
+
+#background-print-screen.comein {
+  background-position: 0 0, 0 0;
+  z-index: 100;
+}
+
+
+#blackscreen {
+  border-radius: 80px;;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  scale: 0 0;
+  transition: scale 0.3s ease-out;
+  background-image: url(/images/phone-with-fun-print-banner.png);
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
+#blackscreen.shown {
+  scale: 1 1;
+}
 
+#yellowprintbutton {
+  background-color: yellow;
+  border-radius: 100px;
+  background-image: url(/images/fun-print-print-button.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 200px;
+}
 
 .visible {
   visibility: visible;
@@ -112,10 +154,8 @@
 }
 
 
-
-
 #bg {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-image: linear-gradient(to top, #f2faff 0%, #eff6fb 100%);
   z-index: -90;
   position: relative;
 }
@@ -128,6 +168,37 @@
   right: 0;
   background-size: auto;
   z-index: -100;
+}
+
+#go-to-print-screen {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  border-radius: 100px;
+  height: 100px;
+  width: 300px;
+  gap: 10px;
+  background-color: ghostwhite;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+
+  border: 3px solid ghostwhite;
+
+  left: 100px;
+  top: 375px;
+  font-size: 80%;
+}
+
+#go-to-print-screen img {
+  height: 100%;
+  width: auto;
+  margin: unset;
+}
+
+#go-to-print-screen:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 #cloud1 {

@@ -9,9 +9,17 @@ script: /js/apologize.js
 
 <div id="phonegrab">
   <div id="phonecase">
-    <div id="backgroundcontainer"></div>
-    <img src="/images/phone-bg-apology.png" id="phoneimg"/>
-    <img src="/images/fun-print-button.png" id="fakecameraicon">
+    <div id="backgroundcontainer">
+      <div id="go-to-print-screen" hidden>
+        <img src="/images/fun-print-pencil.png">
+        <div>
+        Print Apology
+        </div>
+      </div>
+      <img src="/images/fun-print-button.png" id="printappicon">
+      <div id="background-print-screen"></div>
+    </div>
+    <div id="blackscreen"></div>
     <div id="iconinstructions">
     Open the Fun Print app:
     </div>
