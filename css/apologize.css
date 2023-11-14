@@ -16,6 +16,7 @@
   position: relative;
   width: 325px;
   height: 607px;
+  transition: transform 1s linear, opacity 1s linear;
 }
 
 #phoneimg {
@@ -124,6 +125,10 @@
   margin-top: 100px;
   transform: translateX(500px);
   transition: transform 0.5s;
+}
+
+#print-screen-contents.printing {
+  justify-content: flex-start;
 }
 
 #print-screen-contents.comein {
@@ -282,6 +287,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  transition: transform 1.5s linear, opacity 1.5s linear;
 }
 
 

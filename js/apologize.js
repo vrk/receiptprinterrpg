@@ -8,6 +8,9 @@ const printScreenContents = document.getElementById('print-screen-contents');
 const textarea = document.getElementById('apologytextarea');
 const printApologyButton = document.getElementById('printapologybutton');
 
+const wholePhone = document.getElementById('phonecase');
+const bg = document.getElementById('bg');
+
 const onSelected = () => {
   printAppBtn.remove();
   instructions.remove();
@@ -35,15 +38,15 @@ let message = "I am sorry, friend. ";
 let index = 0;
 textarea.addEventListener('keydown', (event) => {
   event.preventDefault();
+  buildingString += message[index];
+  textarea.innerHTML = buildingString;
+  index++;
+  textarea.setSelectionRange(buildingString.length, buildingString.length);
   if (index === message.length - 1) {
     printApologyButton.disabled = false;
   } else if (index === message.length) {
     index = 0;
   }
-  buildingString += message[index];
-  textarea.innerHTML = buildingString;
-  index++;
-  textarea.setSelectionRange(buildingString.length, buildingString.length);
 });
 
 printScreenButton.addEventListener('click', async () => {
@@ -53,6 +56,25 @@ printScreenButton.addEventListener('click', async () => {
   printScreenContents.classList.add('comein');
   await delay(600);
   textarea.focus();
+})
+
+printApologyButton.addEventListener('click', async () => {
+  if (printApologyButton.disabled) { return; }
+  printScreenContents.classList.add('printing');
+  for (let i = 0; i < 3; i++) {
+    printScreenContents.innerHTML = 'Printing.  ';
+    await delay(300);
+    printScreenContents.innerHTML = 'Printing.. ';
+    await delay(300);
+    printScreenContents.innerHTML = 'Printing...';
+    await delay(300);
+  }
+  await delay(300);
+
+  wholePhone.style.opacity = 0;
+  wholePhone.style.transform = 'translateY(100px)';
+  await delay(1000);
+  wholePhone.hidden = true;
 })
 
 async function delay(timeInMs) {
