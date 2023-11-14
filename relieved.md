@@ -50,6 +50,9 @@ script: /js/relieved.js
 <div id="regret">
   <p>oh geez</p>
   <p>Did you really have to make such a fuss?</p>
+  <div class="boxy">
+    <img src="/images/teary-rp-2.png">
+  </div>
   <p class="right more-space-top">So you turned into a receipt printer for a few minutes.</p>
   <p class="right">SO WHAT</p>
   <p class="center more-space-top">The life of a receipt printer is a noble life.</p>

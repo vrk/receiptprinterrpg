@@ -55,6 +55,13 @@ img {
   background-color: white;
 }
 
+#regret .boxy {
+  border: 0;
+  margin: 50px auto;
+  width: 80%;
+  mix-blend-mode: multiply;
+} 
+
 #teary {
 
 }
