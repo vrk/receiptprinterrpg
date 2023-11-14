@@ -1,0 +1,189 @@
+#phonegrab {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#grabtoconfirm {
+  width: 200px;
+  font-size: 20px;;
+  margin: 1em;
+}
+
+#phonecase {
+  position: relative;
+  height: 905px;
+  width: 500px;
+}
+
+#phoneimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#realcameraicon {
+  cursor: pointer;
+  position: absolute;
+
+  top: 350px;
+  left: 125px;
+  width: 100px;;
+}
+
+#fakecameraicon {
+  cursor: pointer;
+  position: absolute;
+
+  top: 250px;
+  right: 200px;
+  width: 115px;
+}
+
+#fakecameraicon:hover,
+#realcameraicon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+
+#iconinstructions {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 24px;
+  padding: 50px;
+}
+
+#explanation {
+  font-size: 12px;
+  width: 50%;
+  left: 25%;
+  height: 200px;
+  position: absolute;
+  bottom: 150px;
+  text-align: center;
+}
+
+#explanation p {
+  margin: 1em 0;
+  padding: 0;
+}
+
+#backgroundcontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#backgroundcontainer video {
+  width: 100%; /* Set the width of the video to 100% of the container */
+  height: 100%; /* Set the height of the video to 100% of the container */
+  object-fit: cover; /* This property stretches the video to cover the entire container */
+
+}
+
+#backgroundcontainer.fake {
+  background-image: url(/images/saitama.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+
+
+
+#bg {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  z-index: -90;
+  position: relative;
+}
+
+.cloud {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: auto;
+  z-index: -100;
+}
+
+#cloud1 {
+  background: url(/images/sworl-2.png)  0 200px;
+	animation: wind1 200s linear infinite;
+  opacity: 0.2;
+}
+
+#cloud2 {
+  background: url(/images/sworl-1.png)  20px 250px;
+  background-size: 80px auto;
+  /* background-blend-mode: multiply; */
+	animation: wind2 50s linear infinite;
+}
+
+@keyframes wind1 {
+  0% {
+    background-position: 0 200px;
+  }
+  100% {
+    background-position: 1000px 200px;
+  }
+}
+
+@keyframes wind2 {
+  /* 0% {
+    background-position: 20px 250px;
+    rotate: 0deg;
+  } */
+  0% {
+    background-position: 40px 300px;
+    rotate: 3deg;
+  }
+  25% {
+    background-position: 70px 100px;
+    rotate: -3deg;
+  }
+  50% {
+    background-position: 120px 200px;
+    rotate: 5deg;
+  }
+  75% {
+    background-position: 70px 100px;
+    rotate: -3deg;
+  }
+  100% {
+    background-position: 40px 300px;
+    rotate: 3deg;
+  }
+}
+
+#bg {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
