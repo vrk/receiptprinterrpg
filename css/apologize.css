@@ -1,8 +1,8 @@
 #phonegrab {
-  max-width: 500px;
+  max-width: 325px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5px;
+  padding-top: 25px;
   padding-bottom: 5px;
 }
 
@@ -14,8 +14,8 @@
 
 #phonecase {
   position: relative;
-  height: 905px;
-  width: 500px;
+  width: 325px;
+  height: 607px;
 }
 
 #phoneimg {
@@ -30,9 +30,9 @@
   cursor: pointer;
   position: absolute;
 
-  top: 250px;
-  right: 200px;
-  width: 115px;
+  top: 260px;
+  left: 120px;
+  width: 90px;
 }
 
 #printappicon:hover {
@@ -108,10 +108,10 @@
 
 #background-print-screen textarea {
   position: relative;
-  width: 400px;
-  height: 300px;
+  width: 250px;
+  height: 150px;
   left: -10px;
-  font-size: 25px;
+  font-size: 18px;
   padding: 20px;
 }
 
@@ -121,7 +121,7 @@
   gap: 25px;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
   transform: translateX(500px);
   transition: transform 0.5s;
 }
@@ -200,8 +200,8 @@
   position: absolute;
   display: flex;
   border-radius: 100px;
-  height: 100px;
-  width: 300px;
+  height: 75px;
+  width: 200px;
   gap: 10px;
   background-color: ghostwhite;
   justify-content: space-between;
@@ -210,9 +210,9 @@
 
   border: 3px solid ghostwhite;
 
-  left: 100px;
-  top: 375px;
-  font-size: 80%;
+  left: 60px;
+  top: 250px;
+  font-size: 75%;
 }
 
 #go-to-print-screen img {
