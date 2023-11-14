@@ -61,7 +61,13 @@ script: /js/revert.js
 
 <div id="hownow">
   <p>
-    so how do you feel now?
+    You saw your reflection in selfie mode.
+  </p>
+  <p>
+    Indeed, you have turned back into a human.
+  </p>
+  <p>
+    How do you feel now?
   </p>
 
   <p class="choices choices-down">
