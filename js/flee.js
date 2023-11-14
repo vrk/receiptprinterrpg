@@ -30,6 +30,8 @@ setTimeout(() => {
 
 }, 1000);
 
+const numberBlackSteps = 24;
+
 const button = document.getElementById('step-button');
 const righthand = document.getElementById('right-hand-svg');
 const lefthand = document.getElementById('left-hand-svg');
@@ -40,14 +42,14 @@ button.addEventListener('click', () => {
 
   const dirMultiplier = leftGoesUp ? 1 : -1;
 
-  if (steps < 42) {
+  if (steps < 42 + numberBlackSteps) {
     rightTopOffset += verticalDelta * dirMultiplier
     righthand.style.top = `${rightTopOffset}px`;
     rightRightOffset += horizontalDelta * dirMultiplier;
     righthand.style.left = `${rightRightOffset}px`;
   }
 
-  if (steps < 48) {
+  if (steps < 48 + numberBlackSteps) {
     leftTopOffset -= verticalDelta * dirMultiplier
     lefthand.style.top = `${leftTopOffset}px`;
     leftLeftOffset += horizontalDelta * dirMultiplier;
@@ -67,11 +69,15 @@ button.addEventListener('click', () => {
     leftGoesUp = !leftGoesUp;
   }
 
-  if (steps === 10) {
+  if (steps < numberBlackSteps) {
+    return;
+  }
+
+  if (steps === 12 + numberBlackSteps) {
     flashTwo();
-  } else if (steps === 20) {
+  } else if (steps === 24 + numberBlackSteps) {
     flashOne();
-  } else if (steps === 30) {
+  } else if (steps === 36 + numberBlackSteps) {
     flashThree();
   }
 
