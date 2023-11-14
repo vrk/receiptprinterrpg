@@ -53,9 +53,6 @@ printScreenButton.addEventListener('click', async () => {
   printScreenContents.classList.add('comein');
   await delay(600);
   textarea.focus();
-
-
-
 })
 
 async function delay(timeInMs) {

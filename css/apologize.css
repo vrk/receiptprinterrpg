@@ -309,13 +309,19 @@
   outline: 0;
 }
 
-.button-10[enabled]:hover {
+.button-10:hover {
   background: linear-gradient(180deg, #fff27a 0%, #ffef73 100%);
 }
 
-.button-10[disabled] {
+.button-10[disabled], 
+.button-10[disabled]:active,
+.button-10[disabled]:hover {
   background: none;
   font-weight: normal;
   background-color: gray;
   cursor: auto;
+}
+
+.button-10:active {
+  background: linear-gradient(180deg, #dacb42 0%, #e0cb30 100%);
 }
