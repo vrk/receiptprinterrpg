@@ -6,7 +6,7 @@ script: /js/flee.js
 ---
 
 <div id="run">
-  You run
+  
 </div>
 <div id="running-away" hidden>
   <div class="boxy" id="one" hidden>
@@ -18,7 +18,7 @@ script: /js/flee.js
   <div class="boxy" id="three" hidden>
     <img src="/images/teary-rp-3.png">
   </div>
-  <div class="boxy-ending" id="theend" >
+  <div class="boxy-ending" id="theend">
   the end
   </div>
 <div class="boxer">

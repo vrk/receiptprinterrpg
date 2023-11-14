@@ -14,8 +14,19 @@ let bgValue = 0;
 let isStopping = false;
 
 setTimeout(() => {
-  runDiv.hidden = true;
-  runningDiv.hidden = false;
+  runDiv.innerHTML = "You decide";
+  setTimeout(() => {
+    runDiv.innerHTML = "to run.";
+    setTimeout(() => {
+      runDiv.hidden = true;
+      setTimeout(() => {
+        runningDiv.hidden = false;
+
+      }, 1000);
+
+    }, 1000);
+
+  }, 1000);
 
 }, 1000);
 
