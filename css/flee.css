@@ -60,7 +60,7 @@ body {
   transition: transform 1.5s linear, opacity 1.5s linear;
   transform: translateY(100px);
   opacity: 0;
-  transition-delay: 2s;
+  transition-delay: 4s;
 }
 
 .boxy img {
