@@ -102,9 +102,34 @@
   background-size: contain;
   background-position: 0 0, 470px 0;
   background-repeat: no-repeat;
-  transition: all 0.5s;
+  transition: background-position 0.5s;
   z-index: -10;
 }
+
+#background-print-screen textarea {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  left: -10px;
+  font-size: 25px;
+  padding: 20px;
+}
+
+#print-screen-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  transform: translateX(500px);
+  transition: transform 0.5s;
+}
+
+#print-screen-contents.comein {
+  transform: translateX(0);
+}
+
 
 #background-print-screen.comein {
   background-position: 0 0, 0 0;
@@ -257,4 +282,40 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+
+/* CSS */
+.button-10 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+
+  color: black;
+  background: linear-gradient(180deg, #f7e64b 0%, #f6e036 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+}
+
+.button-10:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.button-10[enabled]:hover {
+  background: linear-gradient(180deg, #fff27a 0%, #ffef73 100%);
+}
+
+.button-10[disabled] {
+  background: none;
+  font-weight: normal;
+  background-color: gray;
+  cursor: auto;
 }

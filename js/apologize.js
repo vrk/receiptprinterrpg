@@ -4,6 +4,9 @@ const blackScreen = document.getElementById("blackscreen");
 const printScreenButton = document.getElementById("go-to-print-screen");
 const divElement = document.getElementById('backgroundcontainer');
 const printScreen = document.getElementById('background-print-screen');
+const printScreenContents = document.getElementById('print-screen-contents');
+const textarea = document.getElementById('apologytextarea');
+const printApologyButton = document.getElementById('printapologybutton');
 
 const onSelected = () => {
   printAppBtn.remove();
@@ -27,10 +30,30 @@ printAppBtn.addEventListener('click', () => {
   showPrintScreen();
 });
 
-printScreenButton.addEventListener('click', () => {
+let buildingString = '';
+let message = "I am sorry, friend. ";
+let index = 0;
+textarea.addEventListener('keydown', (event) => {
+  event.preventDefault();
+  if (index === message.length - 1) {
+    printApologyButton.disabled = false;
+  } else if (index === message.length) {
+    index = 0;
+  }
+  buildingString += message[index];
+  textarea.innerHTML = buildingString;
+  index++;
+  textarea.setSelectionRange(buildingString.length, buildingString.length);
+});
+
+printScreenButton.addEventListener('click', async () => {
   onSelected();
   printScreen.hidden = false;
   printScreen.classList.add('comein');
+  printScreenContents.classList.add('comein');
+  await delay(600);
+  textarea.focus();
+
 
 
 })
@@ -38,7 +61,6 @@ printScreenButton.addEventListener('click', () => {
 async function delay(timeInMs) {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log("Delayed for 1 second.");
       resolve();
     }, timeInMs);
   })
