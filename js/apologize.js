@@ -1,7 +1,7 @@
 const printAppBtn = document.getElementById("printappicon");
 const instructions = document.getElementById("iconinstructions");
 const blackScreen = document.getElementById("blackscreen");
-const printScreenButton = document.getElementById("go-to-print-screen");
+const printScreenButton = document.getElementById("print-menu");
 const divElement = document.getElementById('backgroundcontainer');
 const printScreen = document.getElementById('background-print-screen');
 const printScreenContents = document.getElementById('print-screen-contents');
@@ -21,11 +21,7 @@ const onSelected = () => {
 async function showPrintScreen() {
   blackScreen.classList.add("shown");
   await delay(350);
-
-  divElement.classList.add("printer");
   printScreenButton.hidden = false;
-
-  await delay(30);
   blackScreen.hidden = true;
 }
 

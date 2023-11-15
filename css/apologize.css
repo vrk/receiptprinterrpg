@@ -84,11 +84,19 @@
   overflow: hidden;
 }
 
-#backgroundcontainer.printer {
+#print-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-image: 
     url(/images/phone-bg-apology-transparent-cover.png),
     url(/images/fun-print-banner.png),
     url(/images/phone-bg-apology.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 #background-print-screen {

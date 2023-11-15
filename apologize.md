@@ -14,10 +14,12 @@ script: /js/apologize.js
 <div id="phonegrab">
   <div id="phonecase">
     <div id="backgroundcontainer">
-      <div id="go-to-print-screen" hidden>
-        <img src="/images/fun-print-pencil.png">
-        <div>
-        Apologize
+      <div id="print-menu" hidden>
+        <div id="go-to-print-screen">
+          <img src="/images/fun-print-pencil.png">
+          <div>
+          Apologize
+          </div>
         </div>
       </div>
       <img src="/images/fun-print-button.png" id="printappicon">
