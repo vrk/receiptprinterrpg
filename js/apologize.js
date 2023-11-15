@@ -23,10 +23,8 @@ async function showPrintScreen() {
   await delay(350);
 
   divElement.classList.add("printer");
-
   printScreenButton.hidden = false;
 
-  await delay(50);
   blackScreen.hidden = true;
 }
 
