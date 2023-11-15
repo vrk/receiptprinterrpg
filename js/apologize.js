@@ -21,11 +21,13 @@ const onSelected = () => {
 async function showPrintScreen() {
   blackScreen.classList.add("shown");
   await delay(350);
-  blackScreen.hidden = true;
 
   divElement.classList.add("printer");
 
   printScreenButton.hidden = false;
+
+  await delay(50);
+  blackScreen.hidden = true;
 }
 
 printAppBtn.addEventListener('click', () => {
