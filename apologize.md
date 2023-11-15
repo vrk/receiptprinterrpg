@@ -5,6 +5,10 @@ stylesheet: /css/apologize.css
 script: /js/apologize.js
 ---
 
+<link rel="preload" as="image" href=/images/phone-bg-apology-transparent-cover.png">
+<link rel="preload" as="image" href=/images/phone-bg-apology.png">
+<link rel="preload" as="image" href=/images/fun-print-banner.png">
+<link rel="preload" as="image" href=/images/phone-with-fun-print-banner.png">
 
 
 <div id="phonegrab">
