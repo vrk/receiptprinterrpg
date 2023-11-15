@@ -20,8 +20,10 @@ const onSelected = () => {
 
 async function showPrintScreen() {
   blackScreen.classList.add("shown");
-  await delay(350);
+  printScreenButton.style.visibility = 'hidden';
   printScreenButton.hidden = false;
+  await delay(350);
+  printScreenButton.style.visibility = 'visible';
   blackScreen.hidden = true;
 }
 
@@ -31,19 +33,18 @@ printAppBtn.addEventListener('click', () => {
 });
 
 let buildingString = '';
-let message = "I am sorry. ";
+let message = "I am sorry.";
 let index = 0;
 textarea.addEventListener('beforeinput', (event) => {
   event.preventDefault();
+  if (index === message.length) {
+    printApologyButton.disabled = false;
+    return;
+  }
   buildingString += message[index];
   textarea.innerHTML = buildingString;
   index++;
   textarea.setSelectionRange(buildingString.length, buildingString.length);
-  if (index === message.length - 1) {
-    printApologyButton.disabled = false;
-  } else if (index === message.length) {
-    index = 0;
-  }
 });
 
 printScreenButton.addEventListener('click', async () => {
