@@ -342,9 +342,15 @@ main {
 #bg {
   background-image: linear-gradient(to top, #f2faff 0%, #eff6fb 100%);
   z-index: -90;
-  position: relative;
-  width: 500px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform 1.5s linear, opacity 1.5s linear;
 }
+
 
 .cloud {
   position: absolute;
@@ -434,17 +440,6 @@ main {
     rotate: 3deg;
   }
 }
-
-#bg {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: transform 1.5s linear, opacity 1.5s linear;
-}
-
 
 /* CSS */
 .button-10 {
