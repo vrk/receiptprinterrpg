@@ -74,7 +74,7 @@ script: /js/revert.js
     <a href="/relieved" class="button-4">
       RELIEVED
     </a>
-    <a href="/regretful" class="button-4">
+    <a href="/whyregret" class="button-4">
       regretful :(
     </a>
     <a href="/indisbelief" class="button-4">
