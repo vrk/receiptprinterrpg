@@ -73,6 +73,10 @@ main {
   padding-top: 25px;
   padding-bottom: 5px;
   position: relative;
+
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #grabtoconfirm {
@@ -87,9 +91,6 @@ main {
   left: 5%;
   aspect-ratio: 325 / 607;
   transition: transform 1s linear, opacity 1s linear;
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
