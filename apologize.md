@@ -6,7 +6,7 @@ script: /js/apologize.js
 ---
 
 
-<div id="apology" hidden>
+<div id="apology">
 
   <p id="inorder">Yes, an apology is in order.</p>
   <div id="bubblesorry">
@@ -34,7 +34,7 @@ script: /js/apologize.js
 
 
 
-<div id="phoneout">
+<div id="phoneout" hidden>
 
 <link rel="preload" as="image" href="/images/phone-bg-apology-transparent-cover.png">
 <link rel="preload" as="image" href="/images/phone-bg-apology.png">

@@ -77,12 +77,11 @@ printApologyButton.addEventListener('click', async () => {
   await delay(300);
 
   receiptPrinter.hidden = false;
+  receiptPrinter.style.opacity = 1;
   wholePhone.style.opacity = 0;
   wholePhone.style.transform = 'translateY(100px)';
   await delay(1500);
-  wholePhone.style.visibility = 'hidden';
-  receiptPrinter.style.opacity = 1;
-  await delay(1000);
+  wholePhone.style.display = 'none';
   await delay(1500);
   document.querySelector('.hid-receipt').classList.add('show')
   await delay(3500);

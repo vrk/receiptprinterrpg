@@ -85,7 +85,7 @@ main {
   position: relative;
   width: 100%;
   aspect-ratio: 325 / 607;
-  /* opacity: 0; */
+  opacity: 0;
   transform: translateY(100px);
   transition: transform 1s linear, opacity 1s linear;
 }
@@ -247,8 +247,8 @@ main {
 #theend {
   opacity: 0;
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  right: 20px;
   text-align: center;
   transition: opacity 1s ease-out;
 }
