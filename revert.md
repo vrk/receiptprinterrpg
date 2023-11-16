@@ -77,7 +77,7 @@ script: /js/revert.js
     <a href="/whyregret" class="button-4">
       regretful :(
     </a>
-    <a href="/indisbelief" class="button-4">
+    <a href="/disbelief" class="button-4">
       am I really a human again??<br>
       I don't believe it
     </a>

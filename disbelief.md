@@ -5,7 +5,7 @@ stylesheet: /css/disbelief.css
 ---
 
 <div id="nothelping">
-<p>OK well being on your phone is NOT gonna help with that
+<p>OK well being on your phone is NOT gonna help you feel human again
 <p>Please go back to your paper zine and turn to page X.
 </div>
 <div id="bg"></div>
