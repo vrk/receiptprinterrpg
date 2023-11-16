@@ -11,6 +11,7 @@ const apologySection = document.getElementById('apology');
 const phoneoutSection = document.getElementById('phoneout');
 const takeOutButton = document.getElementById('takeoutyourphone');
 const phonegrab = document.getElementById('phonegrab');
+const receiptPrinter = document.getElementById('receiptprinter');
 
 const wholePhone = document.getElementById('phonecase');
 const bg = document.getElementById('bg');
@@ -42,13 +43,15 @@ let index = 0;
 textarea.addEventListener('beforeinput', (event) => {
   event.preventDefault();
   if (index === message.length) {
-    printApologyButton.disabled = false;
     return;
   }
   buildingString += message[index];
   textarea.innerHTML = buildingString;
   index++;
   textarea.setSelectionRange(buildingString.length, buildingString.length);
+  if (index === message.length) {
+    printApologyButton.disabled = false;
+  }
 });
 
 printScreenButton.addEventListener('click', async () => {
@@ -73,10 +76,17 @@ printApologyButton.addEventListener('click', async () => {
   }
   await delay(300);
 
+  receiptPrinter.hidden = false;
   wholePhone.style.opacity = 0;
   wholePhone.style.transform = 'translateY(100px)';
+  await delay(1500);
+  wholePhone.style.visibility = 'hidden';
+  receiptPrinter.style.opacity = 1;
   await delay(1000);
-  wholePhone.hidden = true;
+  await delay(1500);
+  document.querySelector('.hid-receipt').classList.add('show')
+  await delay(3500);
+  document.querySelector('#theend').style.opacity = 1;
 })
 
 takeOutButton.addEventListener('click', async () => {

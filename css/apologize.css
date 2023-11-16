@@ -8,7 +8,7 @@ body {
 
 main {
   width: 500px;
-  overflow: hidden;
+  overflow-x: clip;
 }
 
 @media (min-width: 600px) {
@@ -66,11 +66,13 @@ main {
 }
 
 #phonegrab {
-  max-width: 100%;
+  max-width: 500px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 25px;
   padding-bottom: 5px;
+  position: relative;
 }
 
 #grabtoconfirm {
@@ -83,7 +85,7 @@ main {
   position: relative;
   width: 100%;
   aspect-ratio: 325 / 607;
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(100px);
   transition: transform 1s linear, opacity 1s linear;
 }
@@ -184,6 +186,7 @@ main {
   z-index: -10;
 }
 
+
 #background-print-screen textarea {
   position: relative;
   width: 70%;
@@ -191,6 +194,67 @@ main {
   left: -1%;
   font-size: 24px;
   padding: 20px;
+}
+
+#receiptprinter {
+  top: 100px;
+  left: 0;
+  height: 700px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+#receiptprintercontents {
+  width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+#receiptprinter img {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 100px;
+}
+
+.replyreceipt {
+  position: absolute;
+  top: 0;
+  left: 31%;
+
+  height: 197px;
+  width: 37%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.hid-receipt {
+  top: 100%;
+  position: relative;
+  transition: all 3s ease-out;
+  background: white;
+  border: 2px solid gainsboro;
+  border-bottom: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#theend {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  transition: opacity 1s ease-out;
+}
+
+.hid-receipt.show {
+  top: 0;
 }
 
 #print-screen-contents {
@@ -359,7 +423,7 @@ main {
 
 #bg {
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;

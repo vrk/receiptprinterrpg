@@ -1,5 +1,6 @@
-main {
+body, main {
   width: 500px;
+  overflow-x: clip;
 }
 
 @media (min-width: 600px) {
