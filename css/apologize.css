@@ -1,5 +1,72 @@
+body {
+  width: 500px;
+}
+
+#apology {
+  transition: opacity 0.5s;
+}
+
+main {
+  width: 500px;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+#inorder {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bubblesorry {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: right;
+}
+
+#bubblesorry img {
+  max-width: 100%;
+}
+
+#bubblesorry p {
+  padding: 0;
+}
+
+#moresure {
+  border: 15px solid rgb(96, 96, 230);
+  /* border-radius: 30px; */
+  border-image: repeating-linear-gradient(
+      45deg,
+      rgb(96, 96, 230),
+      rgb(96, 96, 230) 15px,
+      white 15px,
+      white 30px
+    )
+    20;
+  padding: 80px 50px;
+  text-align: center;
+
+}
+
+#option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
 #phonegrab {
-  max-width: 325px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 25px;
@@ -14,8 +81,10 @@
 
 #phonecase {
   position: relative;
-  width: 325px;
-  height: 607px;
+  width: 100%;
+  aspect-ratio: 325 / 607;
+  opacity: 0;
+  transform: translateY(100px);
   transition: transform 1s linear, opacity 1s linear;
 }
 
@@ -31,9 +100,9 @@
   cursor: pointer;
   position: absolute;
 
-  top: 260px;
-  left: 120px;
-  width: 90px;
+  top: 25%;
+  left: 37%;
+  width: 25%;
 }
 
 #printappicon:hover {
@@ -56,7 +125,7 @@
   font-size: 12px;
   width: 50%;
   left: 25%;
-  height: 200px;
+  height:30%px;
   position: absolute;
   bottom: 150px;
   text-align: center;
@@ -109,7 +178,7 @@
     url(/images/phone-bg-apology-transparent-cover.png),
     url(/images/phone-bg-gray.png);
   background-size: contain;
-  background-position: 0 0, 470px 0;
+  background-position: 0 0, 670px 0;
   background-repeat: no-repeat;
   transition: background-position 0.5s;
   z-index: -10;
@@ -117,21 +186,21 @@
 
 #background-print-screen textarea {
   position: relative;
-  width: 250px;
-  height: 150px;
-  left: -10px;
-  font-size: 18px;
+  width: 70%;
+  aspect-ratio: 70 / 40;
+  left: -1%;
+  font-size: 24px;
   padding: 20px;
 }
 
 #print-screen-contents {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 48px;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  transform: translateX(500px);
+  transform: translateX(600px);
   transition: transform 0.5s;
 }
 
@@ -196,6 +265,7 @@
   background-image: linear-gradient(to top, #f2faff 0%, #eff6fb 100%);
   z-index: -90;
   position: relative;
+  width: 500px;
 }
 
 .cloud {
@@ -213,8 +283,8 @@
   position: absolute;
   display: flex;
   border-radius: 100px;
-  height: 75px;
-  width: 200px;
+  width: 65%;
+  aspect-ratio: 200 / 75;
   gap: 10px;
   background-color: ghostwhite;
   justify-content: space-between;
@@ -223,9 +293,8 @@
 
   border: 3px solid ghostwhite;
 
-  left: 60px;
-  top: 250px;
-  font-size: 75%;
+  left: 15%;
+  top: 40%;
 }
 
 #go-to-print-screen img {
@@ -296,6 +365,7 @@
   left: 0;
   right: 0;
   transition: transform 1.5s linear, opacity 1.5s linear;
+  opacity: 0;
 }
 
 
@@ -305,9 +375,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 14px;
+  padding: 10px 18px;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  font-size: 34px;
+  font-size: 48px;
   font-weight: bold;
   border-radius: 6px;
   border: none;

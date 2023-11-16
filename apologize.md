@@ -5,10 +5,41 @@ stylesheet: /css/apologize.css
 script: /js/apologize.js
 ---
 
-<link rel="preload" as="image" href=/images/phone-bg-apology-transparent-cover.png">
-<link rel="preload" as="image" href=/images/phone-bg-apology.png">
-<link rel="preload" as="image" href=/images/fun-print-banner.png">
-<link rel="preload" as="image" href=/images/phone-with-fun-print-banner.png">
+
+<div id="apology">
+
+  <p id="inorder">Yes, an apology is in order.</p>
+  <div id="bubblesorry">
+    <p><img src="/images/sorry.png" /></p>
+    <p  class="medtext">you tell the printer.</p>
+  </div>
+  <p>
+    <img src="/images/rplistening.png" />
+  </p>
+  <p class="medtext">
+    The printer looks back silently.
+  </p>
+  <p class="more-space">
+    Did it hear you?<br>
+    It's a bit hard to tell...
+  </p>
+  <p id="moresure">
+    Is there a way to be more sure that your apology was recieved...?
+    </p>
+
+  <p id="option" class="choices"><button id="takeoutyourphone" class="button-4">Take out your phone</button></p>
+
+
+</div>
+
+
+
+<div id="phoneout" hidden>
+
+<link rel="preload" as="image" href="/images/phone-bg-apology-transparent-cover.png">
+<link rel="preload" as="image" href="/images/phone-bg-apology.png">
+<link rel="preload" as="image" href="/images/fun-print-banner.png">
+<link rel="preload" as="image" href="/images/phone-with-fun-print-banner.png">
 
 
 <div id="phonegrab">
@@ -25,16 +56,14 @@ script: /js/apologize.js
       <img src="/images/fun-print-button.png" id="printappicon">
       <div id="background-print-screen">
         <div id="print-screen-contents">
-          <img src="/images/fun-print-printer.png" width="80">
+          <img src="/images/fun-print-printer.png" width="20%">
           <textarea id="apologytextarea" placeholder="type apology here" autocomplete="off"></textarea>
           <button id="printapologybutton" class="button-10" disabled> PRINT </button>
         </div>
       </div>
     </div>
     <div id="blackscreen"></div>
-    <div id="iconinstructions">
-      Open the Fun Print app:
-    </div>
+    <div id="iconinstructions"></div>
   </div>
 </div>
 
@@ -43,4 +72,6 @@ script: /js/apologize.js
 
 <div id="bg">
 <div id="cloud2" class="cloud"></div>
+</div>
+
 </div>

@@ -44,7 +44,7 @@ script: /js/notthis.js
 </div>
 
 <div class="underneath">
-<p>it's the power button!!<br>give it a press
+<p>it's the power button!!<br>press and hold it down
 </div>
 
 <div id ="fadetoblack"></div>

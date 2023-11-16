@@ -280,3 +280,11 @@ span.little {
 }
 
 [hidden] { display: none !important; }
+
+.smoltext {
+  font-size: 60%;
+}
+
+.medtext {
+  font-size: 80%;
+}
