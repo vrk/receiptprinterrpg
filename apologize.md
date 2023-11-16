@@ -24,7 +24,7 @@ script: /js/apologize.js
     It's a bit hard to tell...
   </p>
   <p id="moresure">
-    Is there a way to be more sure that your apology was recieved...?
+    Is there a way to be more sure that your apology was received...?
     </p>
 
   <p id="option" class="choices"><a href="/apologize-pt-2" class="button-4">Take out your phone</a></p>
