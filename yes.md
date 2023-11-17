@@ -36,7 +36,7 @@ script: /js/yes.js
 <div class="conclusion">
 <div class="box">
 <p><span></span>
-<p>What life do you imagine for yourself?
+<p style="margin-bottom: 30px">What life do you imagine for yourself?
 <div id="options">
   <div id="dreams-carousel-evil" class="bottom"></div>
   <div id="dreams-carousel-good" class="top"></div>
