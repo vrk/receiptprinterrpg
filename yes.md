@@ -28,7 +28,7 @@ script: /js/yes.js
 <p id="rules" class="cosmic-rules">Maybe...<br>this rules...?</p>
 <p class="medtext">Spending your days<br>creating banners,<br>printing notes,<br>making stickers<br>... </p>
 <p class="more-space bigtext">Seems pretty great tbh!</p>
-<p class="more-space medtext">You accept your fate,<br> excited for a new beginning.</p>
+<p class="more-space medtext"><strong>You accept your fate,<br> excited for a new beginning.</strong></p>
 <p class="more-space medtext squish">You think about what sort of life you want to lead...</p>
 </div>
 
