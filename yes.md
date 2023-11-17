@@ -2,7 +2,7 @@
 layout: main
 title: receipt printer rpg | pg 10
 stylesheet: /css/yes.css
-# script: /js/yes.js
+script: /js/yes.js
 ---
 
 <div id="intro">
