@@ -1,0 +1,195 @@
+
+main {
+  width: 500px;
+  overflow-x: clip;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+
+#intro {
+  text-align: center;
+  background-image: linear-gradient(to bottom, white 0%, white 75%, rgba(255, 255, 255, 0) 100%);
+  padding-top: 100px;
+  padding-bottom: 300px;
+  max-width: 500px;
+}
+
+#intro-cont {
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 25%, white 75%, rgba(255, 255, 255, 0) 100%);
+  padding-top: 400px;
+  padding-bottom: 300px;
+}
+
+#rules {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 120%;
+  margin-bottom: 200px;
+}
+
+.cosmic-rules {
+  background: radial-gradient(ellipse farthest-side at center center, rgba(255, 255, 255, 0) 73%, #E8E8E8 86%, rgba(255, 255, 255, 0) );
+  text-align: center;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header, .header-spacer {
+  height: calc(100vh * 3);
+  width: 100%;
+}
+
+.header-spacer {
+  max-width: 500px;
+  margin: auto;
+}
+
+.header {
+  background-image: url(/images/sparkle-screentone.png),
+  linear-gradient(to bottom, rgba(255,233,243,1) 0%, rgba(255,203,246,1) 27%, rgba(255,239,249,1) 76%, rgba(255,233,243,1) 100%);
+  background-size: 1000px 1000px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -99;
+}
+
+#page-content {
+  z-index: 100;
+  position: relative;
+  background-color: white;
+}
+
+.dream {
+  background-size: contain;
+  height: 100vh;
+  width: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+#dream {
+  background-image: url(/images/dream-happybday.png);
+  aspect-ratio: 1215 / 1861;
+}
+
+#study {
+  background-image: url(/images/dream-study.png);
+  aspect-ratio: 1380 / 1503;
+}
+
+#sticker {
+  background-image: url(/images/dream-coolsticker.png);
+  aspect-ratio: 1099 / 1153;
+}
+
+.conclusion {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background: linear-gradient(180deg,  rgba(255,255,255,0) 0%, #9958e88a 40%, #9958e88a 100%);
+  color: black;
+  text-align: center;
+}
+
+.squish {
+  max-width: 400px;
+}
+
+#options {
+  margin-top: 25px;
+  width: 115%;
+  height: auto;
+  aspect-ratio: 1561 / 1264;
+  background-image: url(/images/dreambubble.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  left: -4%;
+}
+
+#dreams-carousel-good {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(/images/choice-noble.png);
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#dreams-carousel-evil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(/images/choice-evil.png);
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+.bottom {
+  animation-name: fade2;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

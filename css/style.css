@@ -287,3 +287,7 @@ span.little {
 .medtext {
   font-size: 80%;
 }
+
+.bigtext {
+  font-size: 120%;
+}

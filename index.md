@@ -49,7 +49,7 @@ It’s like <em>I’m</em> a receipt printer now! <span class="little">I'm a hum
 
 </div>
 
-<div class="cosmic more-space">
+<div class="cosmic-rules more-space">
 
 <p>It seems some cosmic genie eavesdropped on your heart and granted this wish of yours!!!!!!
 
