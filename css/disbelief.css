@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(244, 141, 179);
+}
+
 #bg {
   background-image: url('/images/disbelief-bg.png');
   background-size: 300px 300px;
