@@ -1,6 +1,6 @@
 #envelope-container {
   position: relative;
-  width: 500px;
+  width: 480px;
   height: 650px;
   margin: auto;
 }
@@ -10,6 +10,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  max-width: 480px;
 }
 
 #message {
@@ -27,8 +28,8 @@
 #envelope-container {
   mask: url(/images/envelope-mask.png);
   -webkit-mask: url(/images/envelope-mask.png);
-  mask-size: cover;
-  -webkit-mask-size: cover;
+  mask-size: 480px 650px;
+  -webkit-mask-size: 480px 650px;
 }
 
 body {
