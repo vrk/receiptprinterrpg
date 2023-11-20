@@ -16,21 +16,16 @@ body {
    }
 }
 
-#order1 {
+.compbox {
+  animation: fadeInAnimation ease 0.5s;
+  animation-delay: 4s;
+}
+
+.orderbox {
   animation: comeInFromLeft ease-in 1.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   animation-delay: 2s;
   opacity: 0;
   transform: translateX(-250px)
-}
-
-#compbox1 {
-  animation: fadeInAnimation ease 0.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 4s;
-  opacity: 0;
 }
 
 @keyframes comeInFromLeft {
@@ -104,6 +99,8 @@ main {
 }
 
 .box{
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   border-radius: 15px;
   width: 450px;
   margin: 1.5em auto;
@@ -126,6 +123,7 @@ main {
   /* text-shadow: 3px 3px 1px #bfecf7; */
   z-index: 100;
   position: relative;
+  opacity: 0;
 }
 
 .narrow {

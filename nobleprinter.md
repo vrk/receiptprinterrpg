@@ -34,7 +34,7 @@ Excellent, your life of service begins now.
 </section>
 
 <section id="orders" class="hidden" hidden>
-<div class="box" id="order1">
+<div class="box orderbox" id="order1">
   <h1>Order #1</h1>
   <p>Hello! I'd love a cute sticker please :)</p>
 
@@ -45,7 +45,7 @@ Excellent, your life of service begins now.
   </div>
 </div>
 
-<div class="box narrow" id="compbox1">
+<div class="box narrow compbox" id="compbox1">
   <h2>Completion code:</h2>
   <form>
     <label>
