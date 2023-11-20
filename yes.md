@@ -22,8 +22,6 @@ script: /js/yes.js
   </div>
 </div>
 
-
-
 <div id="intro-cont">
 <p id="rules" class="cosmic-rules">Maybe...<br>this rules...?</p>
 <p class="medtext">Spending your days<br>creating banners,<br>printing notes,<br>making stickers<br>... </p>
@@ -31,7 +29,6 @@ script: /js/yes.js
 <p class="more-space medtext"><strong>You accept your fate,<br> excited for a new beginning.</strong></p>
 <p class="more-space medtext squish">You think about what sort of life you want to lead...</p>
 </div>
-
 
 <div class="conclusion">
 <div class="box">
