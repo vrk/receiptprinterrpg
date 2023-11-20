@@ -49,7 +49,7 @@ Excellent, your life of service begins now.
   <form id="completion1">
     <h2>Completion code:</h2>
     <label>
-      <input type="text" min="0" maxlength="4" name="code" id="completioncode"/>
+      <input type="number" min="0" maxlength="4" name="code" id="completioncode"/>
     </label>
     <input type="submit" value="next order" focused/>
   </form>

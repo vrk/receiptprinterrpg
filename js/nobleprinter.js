@@ -4,7 +4,7 @@ const orderScreen = document.getElementById('orders');
 const sakura = document.getElementById('sakura');
 const bg = document.getElementById('bg');
 const form1 = document.getElementById('completion1');
-const firstInput = form1.querySelector('input[type=text]');
+const firstInput = form1.querySelector('input[type=number]');
 
 async function quickstart() {
   welcomeScreen.classList.add("hidden");
@@ -89,7 +89,7 @@ const orderBox2 = `
   <form id="completion2">
     <h2>Completion code:</h2>
     <label>
-      <input type="text" min="0" maxlength="4" name="code" id="completioncode2"/>
+      <input type="number" min="0" maxlength="4" name="code" id="completioncode2"/>
     </label>
     <input type="submit" value="next order"/>
   </form>
@@ -140,7 +140,7 @@ async function questionTwo() {
   const message = orderScreen.querySelector('#message2');
   const response = orderScreen.querySelector('#response2');
   const instructions = orderScreen.querySelector('#instructions2');
-  const input = form.querySelector('input[type=text]');
+  const input = form.querySelector('input[type=number]');
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     if (input.value.trim() === '3456') {
