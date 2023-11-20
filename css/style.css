@@ -87,6 +87,8 @@ img {
   color: white;
   background-color: #202124;
   padding-top: 100px;
+  position: relative;
+  top: 2px;
 }
 
 .reveal {
