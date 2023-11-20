@@ -1,3 +1,12 @@
+html {
+  width: 500px;
+}
+
+@media (min-width: 600px) {
+  html {
+    width: 100%;
+  }
+}
 
 body {
   /* animation-delay: 2s; */
