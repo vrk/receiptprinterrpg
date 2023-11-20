@@ -42,6 +42,7 @@ img, p, blockquote {
 
 blockquote {
   padding: 24px 52px;
+  font-size: 30px;
 }
 
 a {
@@ -100,7 +101,8 @@ img {
 }
 
 span.little {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .feared {
@@ -155,6 +157,7 @@ span.little {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: bold;
 }
 
 .genie {
