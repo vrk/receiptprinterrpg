@@ -1,10 +1,25 @@
+
 body {
   /* animation-delay: 2s; */
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-
   transition: opacity 1s;
+  width: 500px;
+}
+
+main {
+  width: 500px;
+  overflow-x: clip;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
 }
 
 @keyframes fadeInAnimation {
@@ -115,19 +130,6 @@ img {
   100% { background-position: -1080px 50%; }
 }
 
-main {
-  width: 500px;
-  overflow-x: clip;
-}
-
-@media (min-width: 600px) {
-  main {
-    width: 100%;
-  }
-  body {
-    width: 100%;
-  }
-}
 
 .box{
   animation-iteration-count: 1;
@@ -204,6 +206,9 @@ input[type="text"] {
 
 input[type="submit"] {
   margin-top: 20px;
+  height: 30px;
+  border-radius: 50px;
+  width: 120px;
 }
 
 #bg,
