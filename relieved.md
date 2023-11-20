@@ -61,10 +61,11 @@ script: /js/relieved.js
 
 <div id="shame">
 <p>You hurt your receipt printer.</p>
-<p>Your receipt printer, who did not ask to be born.</p>
-<p>Your receipt printer, who has been nothing but a loyal friend.</p>
-<p>You are ashamed.</p>
+<p>Your receipt printer,<br>who did not ask to be born.</p>
+<p>Your receipt printer,<br>who has been nothing but a loyal friend.</p>
 </div>
+
+<p class="shamed">You are ashamed.</p>
 
 <div class="conclusion">
   <div class="box">
