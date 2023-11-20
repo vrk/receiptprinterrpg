@@ -60,7 +60,7 @@ form1.addEventListener('submit', async (event) => {
   event.preventDefault();
   if (firstInput.value.trim() === '4321') {
     firstInput.value = '';
-    response.innerHTML = "Wow I love it!!"
+    response.innerHTML = "wowww it's so COOL!!"
     message.innerHTML = "great work!!"
     instructions.remove();
     form1.remove();

@@ -36,7 +36,7 @@ Excellent, your life of service begins now.
 <section id="orders" class="hidden" hidden>
 <div class="box orderbox" id="order1">
   <h1>Order #1</h1>
-  <p id="response">Hello! I'd love a cute sticker please :)</p>
+  <p id="response">Hello! I'd love a cool sticker please :)</p>
 
   <div class="instructions" id="instructions">
     <span class="emoji">️✏️</span>
