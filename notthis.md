@@ -8,7 +8,7 @@ script: /js/notthis.js
 <div class="diagonal-box">
 	<div class="content">
     NO!!
-    <div class="like">like??</div>
+    <div class="like">excuse me??</div>
   </div>
 </div>
 
