@@ -41,7 +41,7 @@ Excellent, your life of service begins now.
   <div class="instructions" id="instructions">
     <span class="emoji">️✏️</span>
     Return to your paper zine!<br>
-    Turn to page X and follow the instructions.
+    Turn to page 4 and follow the instructions.
   </div>
 </div>
 
