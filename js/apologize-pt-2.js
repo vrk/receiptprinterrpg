@@ -44,6 +44,8 @@ let message = "I am sorry.";
 let index = 0;
 textarea.addEventListener('beforeinput', (event) => {
   event.preventDefault();
+  event.stopPropogation();
+
   if (index === message.length) {
     return;
   }
