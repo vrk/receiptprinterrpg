@@ -5,6 +5,21 @@ stylesheet: /css/evilprinter.css
 script: /js/evilprinter.js
 ---
 
+<div id="fogcontainer">
+  <div id="foglayer_01" class="fog">
+    <div class="image01"></div>
+    <div class="image02"></div>
+  </div>
+  <div id="foglayer_02" class="fog">
+    <div class="image01"></div>
+    <div class="image02"></div>
+  </div>
+  <div id="foglayer_03" class="fog">
+    <div class="image01"></div>
+    <div class="image02"></div>
+  </div>
+</div>
+
 <div id="selection-welcome">
   <canvas id="canvas"></canvas>
   <div class="fog"></div>

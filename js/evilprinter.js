@@ -5,6 +5,7 @@ const orderScreen = document.getElementById('orders');
 const bg = document.getElementById('bg');
 const form1 = document.getElementById('completion1');
 const firstInput = form1.querySelector('input[type=number]');
+const fogContainer = document.getElementById('fogcontainer');
 
 const fadeOutKeyframes = [
   { opacity: 1},
@@ -34,12 +35,12 @@ async function quickstart() {
   welcomeScreen.hidden = true;
   bg.classList.remove("hidden");
   bg.classList.add("shown");
+  fogContainer.classList.add('shown');
   orderScreen.hidden = false;
   await delay (500);
   orderScreen.classList.add("shown");
   orderScreen.classList.remove("hidden");
   await delay (5000);
-  // sakura.classList.add("shown");
   firstInput.focus();
 }
 
@@ -67,7 +68,7 @@ async function start() {
   orderScreen.classList.add("shown");
   orderScreen.classList.remove("hidden");
   await delay (5000);
-  // sakura.classList.add("shown");
+  fogContainer.classList.add("shown");
   firstInput.focus();
 }
 
