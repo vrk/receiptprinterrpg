@@ -290,8 +290,8 @@ main {
   bottom: 0;
   right: 0;
   position: absolute;
-  scale: 0 0;
-  transition: scale 0.3s ease-out;
+  transform: scale(0, 0);
+  transition: transform 0.3s ease-out;
   background-image: url(/images/phone-with-fun-print-banner.png);
   background-size: contain;
   background-position: top;
@@ -299,7 +299,7 @@ main {
 }
 
 #blackscreen.shown {
-  scale: 1 1;
+  transform: scale(1, 1);
 }
 
 #yellowprintbutton {
@@ -397,27 +397,27 @@ main {
 @keyframes wind2 {
   /* 0% {
     background-position: 20px 250px;
-    rotate: 0deg;
+    translate: rotate(0deg);
   } */
   0% {
     background-position: 40px 300px;
-    rotate: 3deg;
+    translate: rotate(3deg);
   }
   25% {
     background-position: 70px 100px;
-    rotate: -3deg;
+    translate: rotate(-3deg);
   }
   50% {
     background-position: 120px 200px;
-    rotate: 5deg;
+    translate: rotate(5deg);
   }
   75% {
     background-position: 70px 100px;
-    rotate: -3deg;
+    translate: rotate(-3deg);
   }
   100% {
     background-position: 40px 300px;
-    rotate: 3deg;
+    translate: rotate(3deg);
   }
 }
 
