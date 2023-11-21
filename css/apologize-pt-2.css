@@ -186,6 +186,7 @@ main {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
+  z-index: 50;
 }
 
 #background-print-screen {
