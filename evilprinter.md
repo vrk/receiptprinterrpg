@@ -5,7 +5,7 @@ stylesheet: /css/evilprinter.css
 script: /js/evilprinter.js
 ---
 
-<div id="fogcontainer">
+<div id="fogcontainer" class="hidden">
   <div id="foglayer_01" class="fog">
     <div class="image01"></div>
     <div class="image02"></div>
@@ -62,4 +62,4 @@ script: /js/evilprinter.js
 </div>
 
 </section>
-<div id="bg" class="hidden"></div>
+<div id="bg" class="hidden" hidden></div>

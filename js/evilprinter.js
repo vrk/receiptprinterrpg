@@ -41,7 +41,6 @@ async function quickstart() {
   orderScreen.classList.add("shown");
   orderScreen.classList.remove("hidden");
   await delay (5000);
-  firstInput.focus();
 }
 
 async function start() {
@@ -58,7 +57,9 @@ async function start() {
   const animation3 = welcomeScreen.animate(fadeOutKeyframes, fadeOutTiming);
   await animation3.finished;
 
+  bg.hidden = false;
   welcomeScreen.classList.add("hidden");
+  fogContainer.classList.remove("hidden");
   fogContainer.classList.add("shown");
   await delay (1500);
   welcomeScreen.hidden = true;
@@ -69,7 +70,6 @@ async function start() {
   orderScreen.classList.add("shown");
   orderScreen.classList.remove("hidden");
   await delay (5000);
-  firstInput.focus();
 }
 
 async function delay(timeInMs) {
@@ -188,8 +188,6 @@ async function questionTwo() {
       message.innerHTML = "wrong code >:("
     }
   });
-  await delay(2000);
-  input.focus();
 }
 
 async function questionThree() {
