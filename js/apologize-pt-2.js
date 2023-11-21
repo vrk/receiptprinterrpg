@@ -1,5 +1,4 @@
 const printAppBtn = document.getElementById("printappicon");
-const instructions = document.getElementById("iconinstructions");
 const blackScreen = document.getElementById("blackscreen");
 const printMenu = document.getElementById("print-menu");
 const printScreenButton = document.getElementById("go-to-print-screen");
@@ -19,12 +18,13 @@ const bg = document.getElementById('bg');
 
 const onSelected = () => {
   printAppBtn.remove();
-  instructions.remove();
   printMenu.hidden = true;
   divElement.classList.remove("printer");
 }
 
 async function showPrintScreen() {
+  blackScreen.hidden = false;
+  await delay(100);
   blackScreen.classList.add("shown");
   printMenu.style.visibility = 'hidden';
   printMenu.hidden = false;
@@ -88,18 +88,6 @@ printApologyButton.addEventListener('click', async () => {
   document.querySelector('.hid-receipt').classList.add('show')
   await delay(3500);
   document.querySelector('#theend').style.opacity = 1;
-})
-
-takeOutButton.addEventListener('click', async () => {
-  apologySection.style.opacity = 0;
-  await delay(500);
-  apologySection.hidden = true;
-  phoneoutSection.hidden = false;
-  await delay(500);
-  wholePhone.style.opacity = 1;
-  wholePhone.style.transform = 'translateY(0)';
-  await delay(500);
-  bg.style.opacity = 1;
 })
 
 async function delay(timeInMs) {

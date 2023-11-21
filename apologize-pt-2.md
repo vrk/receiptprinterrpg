@@ -47,8 +47,7 @@ script: /js/apologize-pt-2.js
         </div>
       </div>
     </div>
-    <div id="blackscreen"></div>
-    <div id="iconinstructions"></div>
+    <div id="blackscreen" hidden></div>
   </div>
 </div>
 
