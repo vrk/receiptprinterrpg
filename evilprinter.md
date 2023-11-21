@@ -14,21 +14,24 @@ script: /js/evilprinter.js
       <p>Very well.
       <p>Your reign of terror<br> begins now.
     </div>
-    <div id="selection-now-we-wait" class="hidden">
-      <p>You wait for your first print job to come in...
-    </div>
   </div>
 </div>
 
 <section id="orders" class="hidden" hidden>
 <div class="box orderbox" id="order1">
   <h1>Order #1</h1>
-  <p id="response">Hello! I'd love a cool sticker please :)</p>
+  <p id="response">Hiii, could you print the notes I took in class yesterday?</p>
 
   <div class="instructions" id="instructions">
-    <span class="emoji">️✏️</span>
-    Return to your paper zine!<br>
-    Turn to page 4 and follow the instructions.
+    <p>
+      <span class="emoji">️🔥</span>
+      PAPER JAM TIME
+      <span class="emoji">️🔥</span>
+    </p>
+    <p>
+      Turn to page X in your paper zine and <br>
+      CRUMPLE THE PAPER.
+    </p>
   </div>
 </div>
 

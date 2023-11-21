@@ -31,15 +31,15 @@ const fadeInTiming = {
 };
 
 async function quickstart() {
-  verywell.classList.add("hidden");
-  verywell.hidden = true;
+  welcomeScreen.hidden = true;
   bg.classList.remove("hidden");
   bg.classList.add("shown");
   orderScreen.hidden = false;
+  await delay (500);
   orderScreen.classList.add("shown");
   orderScreen.classList.remove("hidden");
   await delay (5000);
-  sakura.classList.add("shown");
+  // sakura.classList.add("shown");
   firstInput.focus();
 }
 
@@ -57,7 +57,6 @@ async function start() {
   const animation3 = welcomeScreen.animate(fadeOutKeyframes, fadeOutTiming);
   await animation3.finished;
 
-  waitScreen.classList.add("hidden");
   welcomeScreen.classList.add("hidden");
   await delay (1500);
   welcomeScreen.hidden = true;
@@ -80,8 +79,8 @@ async function delay(timeInMs) {
   })
 } 
 
-start();
-// quickstart();
+// start();
+quickstart();
 
 
 
@@ -90,17 +89,17 @@ const response = document.getElementById('response');
 const instructions = document.getElementById('instructions');
 form1.addEventListener('submit', async (event) => {
   event.preventDefault();
-  if (firstInput.value.trim() === '4321') {
+  if (firstInput.value.trim() === '7890') {
     firstInput.value = '';
-    response.innerHTML = "wowww it's so COOL!!"
-    message.innerHTML = "great work!!"
+    response.innerHTML = "nooo it's crumpled"
+    message.innerHTML = "lol NICE"
     instructions.remove();
     form1.remove();
     await delay(2000);
     questionTwo()
   } else {
     firstInput.value = '';
-    message.innerHTML = "incorrect code :("
+    message.innerHTML = "wrong code >:("
   }
 });
 
@@ -108,12 +107,18 @@ form1.addEventListener('submit', async (event) => {
 const orderBox2 = `
 <div class="box orderbox" id="order2">
   <h1>Order #2</h1>
-  <p id="response2">can you please write me a poem?</p>
+  <p id="response2">I took a photo of some flowers. Print it please?</p>
 
   <div class="instructions" id="instructions2">
-    <span class="emoji">️✏️</span>
-    Return to your paper zine!<br>
-    Turn to page 5 and follow the instructions.
+    <p>
+      <span class="emoji">️🌞</span>
+      LET'S OVERHEAT
+      <span class="emoji">️🌞</span>
+    </p>
+    <p>
+      Turn to page X in your paper zine and
+      print the photo WAY too dark.
+    </p>
   </div>
 </div>
 
@@ -164,13 +169,13 @@ async function questionTwo() {
   const input = form.querySelector('input[type=number]');
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    if (input.value.trim() === '3456') {
+    if (input.value.trim() === '1111') {
       input.value = '';
-      response.innerHTML = "I love it :')"
-      message.innerHTML = "well done!!"
+      response.innerHTML = "dang, it came out kinda dark"
+      message.innerHTML = "they never saw it coming >:D"
       instructions.remove();
       form.remove();
-      await delay(2000);
+      await delay(3000);
       const thisOrderBox = orderScreen.querySelector('.orderbox');
       const thisCompBox = orderScreen.querySelector('.compbox');
       const animation3 = thisOrderBox.animate(fadeOutKeyframes, fadeOutTiming);
@@ -179,7 +184,7 @@ async function questionTwo() {
       await delay(1000);
       questionThree();
     } else {
-      message.innerHTML = "incorrect code :("
+      message.innerHTML = "wrong code >:("
     }
   });
   await delay(2000);
@@ -197,9 +202,15 @@ const orderBox3 = `
   <p id="response3">hi receipt printer!! we have a message for you :D</p>
 
   <div class="instructions" id="instructions2">
-    <span class="emoji">️✏️</span>
-    Return to your paper zine!<br>
-    Turn to page 7 and follow the instructions.
+    <p>
+      <span class="emoji">️🤨</span>
+      Hmmm....
+      <span class="emoji">️🧐</span>
+    </p>
+    <p>
+      You're kinda curious...<br>
+      Turn to page X and follow the instructions?
+    </p>
   </div>
 </div>
 `;

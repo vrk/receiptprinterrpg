@@ -1,5 +1,5 @@
 body {
-  /* animation-delay: 2s; */
+  animation-delay: 2s; 
   animation: fadeInAnimation ease 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -124,7 +124,9 @@ img {
 }
 
 #bg {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%), url(/images/pink-checker.png);
+  background-image:
+      linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgb(255, 0, 0) 100%),
+      url(/images/red-checker.png);
   /* background-size: ; */
   background-position: 0 50%;
   animation: animatedBackground 120s linear infinite;
@@ -155,17 +157,17 @@ img {
   line-height: 1.4;
   text-align: center;
   /* font-weight: bold; */
-  color: #0f0cab;
+  color: #0b0a3d;
   padding: 40px;
   box-shadow:
 	  /* inset #020096 0 0 0 5px,  */
     /* inset #0f059c 0 0 0 1px,  */
-    inset #0f0cab 0 0 0 7px, 
+    inset #0b0a3d 0 0 0 7px, 
     /* inset #1fbdae 0 0 0 11px, 
     inset #8ce9ff 0 0 0 16px, 
     inset #48e4d6 0 0 0 17px,  */
-    inset #e5e8f9 0 0 0 15px, 
-    inset #bfc2f7 0 0 0 16px;
+    inset rgb(104, 104, 125) 0 0 0 15px, 
+    inset #717283 0 0 0 16px;
   /* text-shadow: 3px 3px 1px #bfecf7; */
   z-index: 100;
   position: relative;
@@ -190,16 +192,20 @@ h2 {
 }
 
 .instructions {
-  background-color: #e5e8f9;
+  color: white;
+  background-color: #0b0a3d;
   border-radius: 10px;
-  font-size: 14px;
-  width: 80%;
+  font-size: 17px;
+  width: 296px;
   margin: auto;
   font-weight: bold;
   margin-bottom: 1em;
 
   padding: 10px;
+}
 
+.instructions p {
+  padding: 5px;
 }
 
 form {
