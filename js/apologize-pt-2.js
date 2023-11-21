@@ -24,7 +24,8 @@ const onSelected = () => {
 
 async function showPrintScreen() {
   blackScreen.hidden = false;
-  await delay(100);
+  blackScreen.style.zIndex = 100;
+  await delay(200);
   blackScreen.classList.add("shown");
   printMenu.style.visibility = 'hidden';
   printMenu.hidden = false;
