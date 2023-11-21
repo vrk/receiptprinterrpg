@@ -51,6 +51,7 @@ textarea.addEventListener('beforeinput', (event) => {
   }
   buildingString += message[index];
   textarea.innerHTML = buildingString;
+  textarea.value = buildingString;
   index++;
   textarea.setSelectionRange(buildingString.length, buildingString.length);
   if (index === message.length) {
@@ -63,6 +64,7 @@ textarea.addEventListener('input', (event) => {
   event.stopPropagation();
   console.log('test here too');
   textarea.innerHTML = buildingString;
+  textarea.value = buildingString;
   textarea.setSelectionRange(buildingString.length, buildingString.length);
 })
 
