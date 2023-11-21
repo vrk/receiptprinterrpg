@@ -80,8 +80,8 @@ async function delay(timeInMs) {
   })
 } 
 
-// start();
-quickstart();
+start();
+// quickstart();
 
 
 
