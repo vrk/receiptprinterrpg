@@ -15,3 +15,5 @@ script: /js/loveyou.js
   <img src="/images/envelope-closed.png" id="front-closed">
   <p id="end">the end
 </div>
+
+<div id="click"><p>click to open</div>
