@@ -373,7 +373,7 @@ main {
   position: absolute;
   display: flex;
   border-radius: 100px;
-  width: 60%;
+  width: 270px;
   aspect-ratio: 200 / 75;
   gap: 10px;
   background-color: ghostwhite;
@@ -388,8 +388,8 @@ main {
 }
 
 #go-to-print-screen img {
-  height: 100%;
-  width: auto;
+  width: 84px;
+  height: 75px;
   margin: unset;
 }
 
