@@ -1,14 +1,281 @@
 body {
+  /* animation-delay: 2s; */
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: opacity 0.5s;
   background-color: black;
 }
 
+
+#selection-welcome {
+  position: relative;
+  height: 800px;
+  width: 100%;
+}
+
+#verywell {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#verywell p {
+  padding-top: 0;
+  
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+   }
+}
+
+#order1 {
+  animation-delay: 2s;
+}
+
+#compbox1 {
+  animation-delay: 4s;
+}
+
+.compbox {
+  animation: fadeInAnimation ease 0.5s;
+  animation-delay: 2s;
+}
+
+.orderbox {
+  animation: comeInFromLeft ease-in 1.5s;
+  opacity: 0;
+  transform: translateX(-250px)
+}
+
+@keyframes comeInFromLeft {
+  0% {
+    opacity: 0;
+      transform: translateX(-500px);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes exitRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+   }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+}
+
+
+section {
+  transition: opacity 1s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 100px;
+  text-align: center;
+}
+
+section p {
+  padding-top: 0;
+}
+
+#selection-now-we-wait {
+  color: white;
+  position: absolute;
+}
+
+img {
+  max-width: 400px;
+}
+
+#bg {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%), url(/images/pink-checker.png);
+  /* background-size: ; */
+  background-position: 0 50%;
+  animation: animatedBackground 120s linear infinite;
+
+  z-index: -90;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@keyframes animatedBackground {
+  0% { background-position: 0 50%; }
+  100% { background-position: -1080px 50%; }
+}
+
+
+.box{
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+  width: 450px;
+  margin: 1.5em auto;
+  background: #fff;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  /* font-weight: bold; */
+  color: #0f0cab;
+  padding: 40px;
+  box-shadow:
+	  /* inset #020096 0 0 0 5px,  */
+    /* inset #0f059c 0 0 0 1px,  */
+    inset #0f0cab 0 0 0 7px, 
+    /* inset #1fbdae 0 0 0 11px, 
+    inset #8ce9ff 0 0 0 16px, 
+    inset #48e4d6 0 0 0 17px,  */
+    inset #e5e8f9 0 0 0 15px, 
+    inset #bfc2f7 0 0 0 16px;
+  /* text-shadow: 3px 3px 1px #bfecf7; */
+  z-index: 100;
+  position: relative;
+  opacity: 0;
+}
+
+.narrow {
+  margin-top: 2em;
+  width: 300px;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 0.75em;
+  text-decoration: underline;
+  /* font-weight: normal; */
+}
+
+.instructions {
+  background-color: #e5e8f9;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+  margin-bottom: 1em;
+
+  padding: 10px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 0.75em;
+}
+
+input[type="number"] {
+  font-size: 48px;
+  padding: 5px;
+  width: 160px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  height: 30px;
+  border-radius: 50px;
+  width: 120px;
+}
+
+#bg,
+#orders {
+  transition: opacity 1s;
+}
+
+.emoji {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	position: absolute;
+  height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	/* for text	 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.shown {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.container img {
+	width: 100%;
+	filter: brightness(0.2);
+}
+
+
+
+/** adapted from https://codepen.io/mnald12/pen/RwvbvLq */
 canvas {
   width: 100%;
   height: 800px;
   position: absolute;
   left: 0;
   top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -10;
 }
 
 .fog {
@@ -18,7 +285,4 @@ canvas {
   left: 0;
   top: 0;
   backdrop-filter: blur(20px);
-}/**
-
-https://codepen.io/Anna-Liu-the-typescripter/pen/YzRObGV
-**/
+};
