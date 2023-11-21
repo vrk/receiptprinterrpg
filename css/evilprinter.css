@@ -1,0 +1,588 @@
+body {
+  /* animation-delay: 2s; */
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: opacity 1s;
+  width: 500px;
+}
+
+main {
+  width: 500px;
+  overflow-x: clip;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+   }
+}
+
+#order1 {
+  animation-delay: 2s;
+}
+
+#compbox1 {
+  animation-delay: 4s;
+}
+
+.compbox {
+  animation: fadeInAnimation ease 0.5s;
+  animation-delay: 2s;
+}
+
+.orderbox {
+  animation: comeInFromLeft ease-in 1.5s;
+  opacity: 0;
+  transform: translateX(-250px)
+}
+
+@keyframes comeInFromLeft {
+  0% {
+    opacity: 0;
+      transform: translateX(-500px);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes exitRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+   }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+}
+
+
+section {
+  transition: opacity 1s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 100px;
+  text-align: center;
+}
+
+section p {
+  padding-top: 0;
+}
+
+#selection-now-we-wait {
+  position: absolute;
+}
+
+img {
+  max-width: 400px;
+}
+
+#bg {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%), url(/images/pink-checker.png);
+  /* background-size: ; */
+  background-position: 0 50%;
+  animation: animatedBackground 120s linear infinite;
+
+  z-index: -90;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@keyframes animatedBackground {
+  0% { background-position: 0 50%; }
+  100% { background-position: -1080px 50%; }
+}
+
+
+.box{
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+  width: 450px;
+  margin: 1.5em auto;
+  background: #fff;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  /* font-weight: bold; */
+  color: #0f0cab;
+  padding: 40px;
+  box-shadow:
+	  /* inset #020096 0 0 0 5px,  */
+    /* inset #0f059c 0 0 0 1px,  */
+    inset #0f0cab 0 0 0 7px, 
+    /* inset #1fbdae 0 0 0 11px, 
+    inset #8ce9ff 0 0 0 16px, 
+    inset #48e4d6 0 0 0 17px,  */
+    inset #e5e8f9 0 0 0 15px, 
+    inset #bfc2f7 0 0 0 16px;
+  /* text-shadow: 3px 3px 1px #bfecf7; */
+  z-index: 100;
+  position: relative;
+  opacity: 0;
+}
+
+.narrow {
+  margin-top: 2em;
+  width: 300px;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 0.75em;
+  text-decoration: underline;
+  /* font-weight: normal; */
+}
+
+.instructions {
+  background-color: #e5e8f9;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+  margin-bottom: 1em;
+
+  padding: 10px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 0.75em;
+}
+
+input[type="number"] {
+  font-size: 48px;
+  padding: 5px;
+  width: 160px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  height: 30px;
+  border-radius: 50px;
+  width: 120px;
+}
+
+#bg,
+#orders {
+  transition: opacity 1s;
+}
+
+.emoji {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	position: absolute;
+  height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	/* for text	 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.shown {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.container img {
+	width: 100%;
+	filter: brightness(0.2);
+}
+
+.sakura {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.sakura span {
+	position: absolute;
+	left: -10%;
+	top: 0;
+	width: 25px;
+	height: 25px;
+	border-radius: 5% 80% 10% 80%;
+	background-color: #ffb6c1;
+}
+
+/* add animation */
+.sakura span:nth-child(2n+1) {
+	animation: sakura-anim-1 200s 0s linear infinite;
+}
+
+.sakura span:nth-child(2n+2) {
+	animation: sakura-anim-2 200s 0s linear infinite;
+}
+
+/* side position */
+.sakura span:nth-child(1) {
+	top: 0%;
+}
+
+.sakura span:nth-child(2) {
+	top: 2%;
+}
+
+.sakura span:nth-child(3) {
+	top: 4%;
+}
+
+.sakura span:nth-child(4) {
+	top: 6%;
+}
+
+.sakura span:nth-child(5) {
+	top: 8%;
+}
+
+.sakura span:nth-child(6) {
+	top: 10%;
+}
+
+.sakura span:nth-child(7) {
+	top: 12%;
+}
+
+.sakura span:nth-child(8) {
+	top: 14%;
+}
+
+.sakura span:nth-child(9) {
+	top: 16%;
+}
+
+.sakura span:nth-child(10) {
+	top: 18%;
+}
+
+.sakura span:nth-child(11) {
+	top: 20%;
+}
+
+.sakura span:nth-child(12) {
+	top: 22%;
+}
+
+.sakura span:nth-child(13) {
+	top: 24%;
+}
+
+.sakura span:nth-child(14) {
+	top: 26%;
+}
+
+.sakura span:nth-child(15) {
+	top: 28%;
+}
+
+.sakura span:nth-child(16) {
+	top: 30%;
+}
+
+.sakura span:nth-child(17) {
+	top: 32%;
+}
+
+.sakura span:nth-child(18) {
+	top: 34%;
+}
+
+.sakura span:nth-child(19) {
+	top: 36%;
+}
+
+.sakura span:nth-child(20) {
+	top: 38%;
+}
+
+.sakura span:nth-child(21) {
+	top: 40%;
+}
+
+.sakura span:nth-child(22) {
+	top: 42%;
+}
+
+.sakura span:nth-child(23) {
+	top: 44%;
+}
+
+.sakura span:nth-child(24) {
+	top: 46%;
+}
+
+.sakura span:nth-child(25) {
+	top: 48%;
+}
+
+.sakura span:nth-child(26) {
+	top: 50%;
+}
+
+.sakura span:nth-child(27) {
+	top: 52%;
+}
+
+.sakura span:nth-child(28) {
+	top: 54%;
+}
+
+.sakura span:nth-child(29) {
+	top: 56%;
+}
+
+.sakura span:nth-child(30) {
+	top: 58%;
+}
+
+.sakura span:nth-child(31) {
+	top: 60%;
+}
+
+.sakura span:nth-child(32) {
+	top: 62%;
+}
+
+.sakura span:nth-child(33) {
+	top: 64%;
+}
+
+.sakura span:nth-child(34) {
+	top: 66%;
+}
+
+.sakura span:nth-child(35) {
+	top: 68%;
+}
+
+.sakura span:nth-child(36) {
+	top: 70%;
+}
+
+.sakura span:nth-child(37) {
+	top: 72%;
+}
+
+.sakura span:nth-child(38) {
+	top: 74%;
+}
+
+.sakura span:nth-child(39) {
+	top: 76%;
+}
+
+.sakura span:nth-child(40) {
+	top: 78%;
+}
+
+.sakura span:nth-child(41) {
+	top: 80%;
+}
+
+.sakura span:nth-child(42) {
+	top: 82%;
+}
+
+.sakura span:nth-child(43) {
+	top: 84%;
+}
+
+.sakura span:nth-child(44) {
+	top: 86%;
+}
+
+.sakura span:nth-child(45) {
+	top: 88%;
+}
+
+.sakura span:nth-child(46) {
+	top: 90%;
+}
+
+.sakura span:nth-child(47) {
+	top: 92%;
+}
+
+.sakura span:nth-child(48) {
+	top: 94%;
+}
+
+.sakura span:nth-child(49) {
+	top: 96%;
+}
+
+.sakura span:nth-child(50) {
+	top: 98%;
+}
+
+/* size */
+:root {
+  --sakura-size: 25px;
+  --sakura-duration: 60s;
+}
+
+
+.sakura span:nth-child(3n+1) {
+	width: var(--sakura-size);
+	height: calc(var(--sakura-size) * 0.5);
+}
+
+.sakura span:nth-child(3n+2) {
+	width: calc(var(--sakura-size) * 0.8);
+	height: calc(var(--sakura-size) * 0.4);
+}
+
+.sakura span:nth-child(3n+3) {
+	width: calc(var(--sakura-size) * 0.6);
+	height: calc(var(--sakura-size) * 0.3);
+}
+
+/* animation-duration */
+.sakura span:nth-child(4n+1) {
+	animation-duration: calc(var(--sakura-duration) * (5 / 12));
+}
+
+.sakura span:nth-child(4n+2) {
+	animation-duration: var(--sakura-duration);
+}
+
+.sakura span:nth-child(4n+3) {
+	animation-duration: calc(var(--sakura-duration) * (8 / 12));
+}
+
+.sakura span:nth-child(4n+4) {
+	animation-duration: calc(var(--sakura-duration) * (1 / 2));
+}
+
+
+/* animation-delay */
+.sakura span:nth-child(11n+1) {
+	animation-delay: 0s;
+}
+
+.sakura span:nth-child(11n+2) {
+	animation-delay: calc(var(--sakura-duration) * (9 / 12));
+}
+
+.sakura span:nth-child(11n+3) {
+	animation-delay: calc(var(--sakura-duration) * (2 / 12));
+}
+
+.sakura span:nth-child(11n+4) {
+	animation-delay: calc(var(--sakura-duration) * (5 / 12));
+}
+
+.sakura span:nth-child(11n+5) {
+	animation-delay: calc(var(--sakura-duration) * (6 / 12));
+}
+
+.sakura span:nth-child(11n+6) {
+	animation-delay: calc(var(--sakura-duration) * (7 / 12));
+}
+
+.sakura span:nth-child(11n+7) {
+	animation-delay: calc(var(--sakura-duration) * (3 / 12));
+}
+
+.sakura span:nth-child(11n+8) {
+	animation-delay: calc(var(--sakura-duration) * (1 / 12));
+}
+
+.sakura span:nth-child(11n+9) {
+	animation-delay: calc(var(--sakura-duration) * (2 / 12));
+}
+
+.sakura span:nth-child(11n+10) {
+	animation-delay: calc(var(--sakura-duration) * (11 / 12));
+}
+
+.sakura span:nth-child(11n+11) {
+	animation-delay: calc(var(--sakura-duration) * (10 / 12));
+}
+
+/* animation */
+@keyframes sakura-anim-1 {
+	0% {
+		left: -10%;
+		transform: translateY(0) rotateY(0) rotateX(0);
+	}
+
+	100% {
+		left: 100%;
+		transform: translateY(15vw) rotateY(180deg) rotateX(360deg);
+	}
+}
+
+@keyframes sakura-anim-2 {
+	0% {
+		left: -10%;
+		transform: translateY(0);
+	}
+
+	100% {
+		left: 100%;
+		transform: translateY(-15vw) rotateY(180deg) rotateX(360deg);
+	}
+}
