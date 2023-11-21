@@ -59,11 +59,11 @@ async function start() {
   await animation3.finished;
 
   welcomeScreen.classList.add("hidden");
+  fogContainer.classList.add("shown");
   await delay (1500);
   welcomeScreen.hidden = true;
   bg.classList.remove("hidden");
   bg.classList.add("shown");
-  fogContainer.classList.add("shown");
   orderScreen.hidden = false;
   await delay (500);
   orderScreen.classList.add("shown");
@@ -316,10 +316,10 @@ class Cloud {
     }
   }
   draw() {
-    ctx.beginPath();
-    ctx.fillStyle = this.clr;
-    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-    ctx.fill();
+    // ctx.beginPath();
+    // ctx.fillStyle = this.clr;
+    // ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+    // ctx.fill();
 
     const strike = Math.floor(Math.random() * 100000);
 
