@@ -44,7 +44,7 @@ let message = "I am sorry.";
 let index = 0;
 textarea.addEventListener('beforeinput', (event) => {
   event.preventDefault();
-  event.stopPropogation();
+  event.stopPropagation();
 
   if (index === message.length) {
     return;
@@ -60,7 +60,7 @@ textarea.addEventListener('beforeinput', (event) => {
 
 textarea.addEventListener('input', (event) => {
   event.preventDefault();
-  event.stopPropogation();
+  event.stopPropagation();
   console.log('test here too');
   textarea.innerHTML = buildingString;
   textarea.setSelectionRange(buildingString.length, buildingString.length);
