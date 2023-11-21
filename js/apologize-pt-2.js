@@ -58,6 +58,14 @@ textarea.addEventListener('beforeinput', (event) => {
   }
 });
 
+textarea.addEventListener('input', (event) => {
+  event.preventDefault();
+  event.stopPropogation();
+  console.log('test here too');
+  textarea.innerHTML = buildingString;
+  textarea.setSelectionRange(buildingString.length, buildingString.length);
+})
+
 printScreenButton.addEventListener('click', async () => {
   onSelected();
   printScreen.hidden = false;
