@@ -63,12 +63,12 @@ async function start() {
   welcomeScreen.hidden = true;
   bg.classList.remove("hidden");
   bg.classList.add("shown");
+  fogContainer.classList.add("shown");
   orderScreen.hidden = false;
   await delay (500);
   orderScreen.classList.add("shown");
   orderScreen.classList.remove("hidden");
   await delay (5000);
-  fogContainer.classList.add("shown");
   firstInput.focus();
 }
 
