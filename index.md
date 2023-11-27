@@ -101,7 +101,7 @@ You can assemble <em>Receipt Printer RPG</em> either as a 📄 <em>stack of page
 
 The 📄 <em>stack of pages</em> option is **significantly easier** to print and assemble correctly, so choose this option if you're low on time and/or paper.
 
-The 📖 <em>booklet</em> option is **arguably cooler** but can be a little tricky, especially if your printer can't do double-sided prints. Choose this option if you are OK with a little more work!
+The 📖 <em>booklet</em> option is **arguably cooler** but can be a little tricky, especially if your printer can't print double-sided. Choose this option if you are OK with a little more work and some possible trial & error!
 
 
 <h3 id="stack">
