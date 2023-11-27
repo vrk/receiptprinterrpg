@@ -424,12 +424,9 @@ input[type="radio"]:checked::before {
   margin-bottom: 15px;
 }
 
-li p {
-  margin-left: 1em;
-}
-
 ol li {
   position: relative;
+  padding-left: 1em;
 }
 
 ol li::marker {
@@ -440,7 +437,7 @@ ol li::marker {
 
 ol li:before {
   position: absolute;
-  left: -28px;
+  left: -30px;
   top: 4px;
   content: "";
 
