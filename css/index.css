@@ -517,6 +517,7 @@ details {
 
 summary {
   font-weight: 600;
+  cursor: pointer;
 }
 
 details video {
