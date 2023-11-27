@@ -148,7 +148,7 @@ These are instructions for how to make a booklet if you do <strong>not</strong> 
 
 <details>
 <summary>VIDEO: Watch me do this properly with my printer</summary>
-<video src="/images/printer-demo.mov" controls>
+<video src="/images/printer-demo.mov" controls preload="metadata">
 </details>
 
 4. <p>Now download the backs PDF below.
@@ -159,7 +159,7 @@ These are instructions for how to make a booklet if you do <strong>not</strong> 
 
 <details>
 <summary>VIDEO: Here's what a correct printout looks like</summary>
-<video src="/images/proper-printout.mov" controls>
+<video src="/images/proper-printout.mov" controls preload="metadata">
 </details>
 
 6. Cut each page into 2 sheets.
@@ -193,7 +193,7 @@ These instructions only work if you have a duplex printer, meaning it can print 
 
 <details>
 <summary>VIDEO: Here's what a correct printout looks like</summary>
-<video src="/images/proper-printout.mov" controls>
+<video src="/images/proper-printout.mov" controls preload="metadata">
 </details>
 
 
