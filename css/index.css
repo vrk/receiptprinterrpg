@@ -1,0 +1,273 @@
+:root {
+  --paper-color: #FFFDE6;
+}
+
+body {
+  background-color: var(--paper-color);
+  font-family: 'Asap', sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  text-underline-position: under;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+body * {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(165, 0, 0);
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+section {
+  max-width: 900px;
+  margin: 200px auto;
+  margin-top: 0;
+}
+
+#heading {
+  display: flex;
+  padding: 100px 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin-bottom: 120px;
+}
+
+#title {
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+}
+
+#titleline1, #titleline2 {
+  font-size: 96px;
+  letter-spacing: 20px;
+}
+
+#titleline3 {
+  font-size: 128px;
+  letter-spacing: 50px;
+}
+
+#subtitle {
+  margin-top: 30px;
+}
+
+#subtitleline1 {
+  margin-left: 25px;
+}
+
+#subtitleline2 {
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+#digitalline {
+  display: inline-block;
+  margin-left: 20px;
+  top: -2px;
+  position: relative;
+}
+
+#zineline {
+  margin-left: 20px;
+  top: -2px;
+  position: relative;
+}
+
+#toplay {
+  font-weight: 600;
+  letter-spacing: 4.5px;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 68px;
+}
+
+#items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#items .item {
+  border-radius: 100px;
+  border: 10px solid black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.description {
+  width: 175px;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 30px;
+
+}
+
+.description em {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+}
+
+#paperzine {
+  background-image: url(/images/need-printed.png);
+  width: 254px;
+  height: 283px;
+}
+
+#pen {
+  background-image: url(/images/need-pen.png);
+  width: 226px;
+  height: 283px;
+}
+
+#qrcelly {
+  background-image: url(/images/need-celly.png);
+  width: 261px;
+  height: 283px;
+}
+
+#items > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#toplaysection {
+  margin-top: 100px;
+}
+
+#canprintforfree {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#canprintforfree h1 {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 3.6px;
+  margin-bottom: 0;
+}
+
+#canprintforfree p {
+  margin-top: 0;
+}
+
+#instructions h1 {
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 30px;
+  gap: 30px;
+}
+
+.number {
+  background-color: black;
+  color: var(--paper-color);
+  width: 50px;
+  height: 50px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 100px;
+  text-align: center;
+}
+
+#zinestyles {
+  display: flex;;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+#zinestyles > label {
+  width: 275px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 5px dashed transparent;
+}
+
+#zinestyles > label.selected,
+#zinestyles > label:hover {
+  border: 5px dashed black;
+}
+
+#zinestyles > label > div {
+  display: flex;
+  gap: 10px;
+}
+
+
+#zinestyles > label > div input {
+}
+
+#zinestyles img {
+  height: 150px;
+  width: auto;
+  max-width: 100%;
+}
+
+input[type="radio"]:checked + label {
+  background-color: red;
+}
+
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--paper-color);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em black;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
