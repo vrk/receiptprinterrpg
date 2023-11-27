@@ -12,7 +12,7 @@ title: receipt printer rpg | pg 1
 
 
 <div class="reveal">
-  <img src="./images/receipt-printer-selfie.png" class="selfie">
+  <img src="/images/receipt-printer-selfie.png" class="selfie">
 </div>
 
 <div class="feared">
