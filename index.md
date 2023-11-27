@@ -115,7 +115,7 @@ The 📖 <em>booklet</em> option is **arguably cooler** but can be a little tric
   _(good for scissors)_
 - <img src="/images/file-pdf.png" width="24" height="24">  [4 per page, no cutlines](/downloads/4up.pdf) _(good for a paper cutter)_
 
-2. Print out the PDF.
+2. Print out the PDF, single-sided.
 
 4. Cut each page into 4 sheets.
 
