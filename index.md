@@ -166,6 +166,12 @@ These are instructions for how to make a booklet if you do <strong>not</strong> 
 
 7. Fold each page in half, with the lower numbers always showing on the front side.
 
+<details>
+<summary>PICTURE: Example of what I mean</summary>
+See how the page with "1" is in front of the page with the "27":
+<img src="/images/folded-example.png">
+</details>
+
 8. Staple in the middle.
 
 Enjoy the zine!!
@@ -201,6 +207,12 @@ These instructions only work if you have a duplex printer, meaning it can print 
 3. Cut each page into 2 sheets.
 
 4. Fold each page in half, with the lower numbers always showing on the front side.
+
+<details>
+<summary>PICTURE: Example of what I mean</summary>
+See how the page with "1" is in front of the page with the "27":
+<img src="/images/folded-example.png">
+</details>
 
 5. Staple in the middle.
 

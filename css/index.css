@@ -525,3 +525,7 @@ details video {
   background-color: dimgray;
   border-radius: 15px;
 }
+
+summary img {
+  max-width: 100%;
+}
