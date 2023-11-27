@@ -184,7 +184,7 @@ Enjoy the zine!!
 
 <div class="note">
 
-These instructions only work if you have a duplex printer, meaning it can print on both sides of a piece of paper! For regular printers, [follow this instead](#duplex).
+These instructions only work if you have a duplex printer, meaning it can print on both sides of a piece of paper! For regular printers, [follow this instead](#booklet).
 
 </div>
 
