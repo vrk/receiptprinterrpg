@@ -3,11 +3,11 @@ section {
   margin-bottom: 0;
 }
 
-h3 {
+#downloads h3 {
   margin-top: 100px;
 }
 
-h3 > img {
+#downloads h3 > img {
   margin-bottom: 15px;
 }
 
@@ -43,15 +43,14 @@ ul {
 }
 
 
-h1 {
+#downloads h1 {
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 4px;
   text-decoration: underline;
-  text-align: center;
 }
 
-h3 {
+#downloads h3 {
   font-weight: 600;
   font-size: 30px;
   letter-spacing: 2px;

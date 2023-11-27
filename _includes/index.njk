@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+  <head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/donut.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ stylesheet | safe }}" type="text/css" media="screen" />
+    <script src="{{ script | safe }}" defer></script>
+  </head>
+    <body>
+        <main>
+          {{ content | safe }}
+        </main>
+    </body>
+</html>

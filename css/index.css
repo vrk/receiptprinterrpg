@@ -31,10 +31,18 @@ main {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 section {
   max-width: 900px;
   margin: 200px auto;
   margin-top: 0;
+}
+
+#rprpg {
+  text-align: center;
 }
 
 #heading {
@@ -44,6 +52,22 @@ section {
   justify-content: space-between;
   max-width: 1100px;
   margin-bottom: 120px;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 500px) {
+  #heading {
+    padding: 50px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
 }
 
 #title {
@@ -62,30 +86,57 @@ section {
   letter-spacing: 50px;
 }
 
-#subtitle {
-  margin-top: 30px;
+@media (min-width: 501px) {
+  #subtitle {
+    margin-top: 30px;
+  }
+
+  #subtitleline1 {
+    margin-left: 25px;
+  }
+
+  #subtitleline2 {
+    margin-left: 15px;
+    margin-top: 3px;
+  }
+
+
+  #digitalline {
+    display: inline-block;
+    margin-left: 20px;
+    top: -2px;
+    position: relative;
+  }
+  
+  #zineline {
+    margin-left: 20px;
+    top: -2px;
+    position: relative;
+  }
+  
 }
 
-#subtitleline1 {
-  margin-left: 25px;
+#mainimage {
+  width: 472px;
+  height: auto;
+  max-width: 90%;
+  aspect-ratio: 472 / 401;
 }
 
-#subtitleline2 {
-  margin-left: 15px;
-  margin-top: 3px;
-}
+@media (max-width: 500px) {
+  #titleline1, #titleline2 {
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+  #titleline3 {
+    letter-spacing: 25px;
+  }
 
-#digitalline {
-  display: inline-block;
-  margin-left: 20px;
-  top: -2px;
-  position: relative;
-}
-
-#zineline {
-  margin-left: 20px;
-  top: -2px;
-  position: relative;
+  #subtitle  {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 #toplay {
@@ -96,10 +147,79 @@ section {
   margin-bottom: 68px;
 }
 
+@media (max-width: 500px) {
+  #toplay {
+    letter-spacing: 3px;
+    font-size: 30px;
+  }
+}
+
+
+#introstills {
+  margin: 100px auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px;
+}
+
+#introstills .description {
+  width: unset;
+  padding: 0 20px;
+}
+
+#introstills > div {
+  width: 300px;
+}
+
+#introstills img {
+  width: 250px;
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  #introstills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+#scanit {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Noto Serif JP', serif;
+}
+
+#scanit img {
+  width: 65%;
+}
+
+#scanit p {
+  padding: 20px;
+  font-size: 36px;
+}
+
 #items {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+@media (max-width: 500px) {
+  #items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 #items .item {
@@ -115,7 +235,12 @@ section {
   text-align: center;
   line-height: 1.2;
   margin-top: 30px;
+}
 
+@media (max-width: 500px) {
+  .description {
+    margin-top: 15px;
+  }
 }
 
 .description em {
@@ -270,4 +395,114 @@ input[type="radio"]::before {
 
 input[type="radio"]:checked::before {
   transform: scale(1);
+}
+
+#downloads h3 {
+  margin-top: 100px;
+}
+
+#downloads h3 > img {
+  margin-bottom: 15px;
+}
+
+li p {
+  margin-left: 1em;
+}
+
+ol li {
+  position: relative;
+}
+
+ol li::marker {
+  color: var(--paper-color);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+ol li:before {
+  position: absolute;
+  left: -28px;
+  top: 4px;
+  content: "";
+
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  z-index: -999;
+}
+
+@media (max-width: 500px) {
+  ol li:before {
+    top: 0;
+  }
+}
+
+ul {
+  margin: 1em 2em;
+}
+
+#downloads {
+  margin-top: 200px;
+  width: 90%;
+  max-width: 750px;
+  
+}
+
+#buyit {
+  text-align: center;
+}
+
+
+#buyit h1,
+#downloads h1 {
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  #downloads h1 {
+    letter-spacing: 3px;
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.note {
+  font-size: 20px;
+  font-style: italic;
+  margin: 25px 0;
+  text-align: center;
+  background-color: #ebe7bb;
+  border-radius: 25px;
+  padding: 20px;
+
+}
+
+.instructions {
+  text-align: center;
+}
+
+details {
+  margin-left: 3em;
+}
+
+summary {
+  font-weight: 600;
+}
+
+details video {
+  max-width: 100%;
 }
