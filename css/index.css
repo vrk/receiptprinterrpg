@@ -521,4 +521,6 @@ summary {
 
 details video {
   max-width: 100%;
+  background-color: dimgray;
+  border-radius: 15px;
 }
