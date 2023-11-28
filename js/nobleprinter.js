@@ -81,7 +81,7 @@ const orderBox2 = `
   <div class="instructions" id="instructions2">
     <span class="emoji">️✏️</span>
     Return to your paper zine!<br>
-    Turn to page 5 and follow the instructions.
+    Turn to page 11 and follow the instructions.
   </div>
 </div>
 
@@ -178,7 +178,7 @@ const orderBox3 = `
   <div class="instructions" id="instructions2">
     <span class="emoji">️✏️</span>
     Return to your paper zine!<br>
-    Turn to page 7 and follow the instructions.
+    Turn to page 15 and follow the instructions.
   </div>
 </div>
 `;

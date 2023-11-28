@@ -44,7 +44,7 @@ script: /js/evilprinter.js
       <span class="emoji">️🔥</span>
     </p>
     <p>
-      Turn to page X in your paper zine and <br>
+      Turn to page 21 in your paper zine and <br>
       CRUMPLE THE PAPER.
     </p>
   </div>

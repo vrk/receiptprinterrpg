@@ -117,7 +117,7 @@ const orderBox2 = `
       <span class="emoji">️🌞</span>
     </p>
     <p>
-      Turn to page X in your paper zine and
+      Turn to page 23 in your paper zine and
       print the photo WAY too dark.
     </p>
   </div>
@@ -208,7 +208,7 @@ const orderBox3 = `
     </p>
     <p>
       You're kinda curious...<br>
-      Turn to page X and follow the instructions?
+      Turn to page 25 and follow the instructions?
     </p>
   </div>
 </div>
