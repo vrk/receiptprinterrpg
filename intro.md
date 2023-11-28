@@ -26,8 +26,8 @@ title: receipt printer rpg | pg 1
 <div class="narration">
 
 <p>How this happened, <br>you have no clue.<br><br>Why this happened... <br>you have a guess.
-<p>A few moments ago, you had been coloring in a QR code in a zine.
-<p>As you colored, you realized:
+<p>A few moments ago, you had been coloring in a QR code.
+<p>As you colored, a thought occurred to you:
 
 </div>
 
