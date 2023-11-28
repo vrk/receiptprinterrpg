@@ -221,3 +221,15 @@ Enjoy the zine!!
 
 
 </section>
+
+<section id="contact">
+
+# Contact
+
+Send bug reports, questions, and fanart to:
+
+`vrkzines@gmail.com`
+
+
+
+</section>

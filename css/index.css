@@ -465,11 +465,13 @@ ul {
   
 }
 
+#contact,
 #buyit {
   text-align: center;
 }
 
 
+#contact h1,
 #buyit h1,
 #downloads h1 {
   font-weight: 600;
