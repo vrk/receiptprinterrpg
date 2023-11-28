@@ -1,6 +1,6 @@
 ---
 layout: index
-title: receipt printer rpg
+title: Receipt Printer RPG
 script: /js/index.js
 ---
 
