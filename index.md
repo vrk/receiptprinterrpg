@@ -226,7 +226,7 @@ Enjoy the zine!!
 
 # Contact
 
-Send bug reports, questions, and fanart to:
+Send bug reports, questions, and wholesome fanart to:
 
 `vrkzines@gmail.com`
 
