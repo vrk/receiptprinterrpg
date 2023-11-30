@@ -471,6 +471,10 @@ ul {
 }
 
 
+.intropage {
+  transform: rotate(5deg);
+}
+
 #contact h1,
 #buyit h1,
 #downloads h1 {
@@ -530,4 +534,30 @@ details video {
 
 summary img {
   max-width: 100%;
+}
+
+#choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  margin: 2em;
+}
+
+.choice img {
+  height: 150px;
+}
+
+.choice {
+  cursor: pointer;
+  width: 275px;
+  text-align: center;
+  background-color:  #f2eec6;
+  padding: 35px 25px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
