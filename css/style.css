@@ -247,12 +247,12 @@ span.little {
                                   supported by Chrome, Edge, Opera and Firefox */
 
   user-select: none;
-  height: 75px;
+  min-height: 100px;
   line-height: 1.5;
   appearance: none;
   background-color: #FAFBFC;
   border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
+  border-radius: 24px;
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
   box-sizing: border-box;
   color: #24292E;
@@ -261,11 +261,11 @@ span.little {
   align-items: center;
   justify-content: center;
   font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.4;
   list-style: none;
-  padding: 6px 16px;
+  padding: 10px 16px;
   position: relative;
   transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   user-select: none;
